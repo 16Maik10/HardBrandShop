@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header__shadowBox {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+}
+
+.headerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+
+.headerTop__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerTop__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerTop__cart {
+  width: 32px;
+  height: 29px;
+  border: none;
+  background: url(../img/header/cart.svg) no-repeat center;
+  margin-right: 26px;
+}
+
+.headerTop__auth {
+  background-color: #f16d7f;
+  color: #ffffff;
+  border: none;
+  padding: 11px 17px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 37px;
+}
+
+.logo__icon {
+  margin-right: 13px;
+}
+
+.logo__title {
+  font: 300 27px/32px "Lato";
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.logo__title_pinkLetter {
+  font-weight: 900;
+  color: #f16d7f;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search__browse {
+  font: 300 14px/32px "Lato";
+  color: #222222;
+  background-color: #cdcdcc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
+  background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 0px 0px 3px;
+  padding: 8px;
+}
+
+.search__que {
+  width: 281px;
+  padding: 0 16px;
+  border: 1px solid #e6e6e6;
+}
+
+.search__enter {
+  width: 36px;
+  background: url(../img/header/searchButton.png) no-repeat center;
+  border: 1px solid #e6e6e6;
+}
+
+.navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 680px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.navLinks__item {
+  font: 700 14px/26px "Lato";
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.headerBanner {
+  height: 614px;
+  background: url(../img/header/header_bg.png) no-repeat top center/cover;
+}
+
+.headerBannerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 224px;
+}
+
+.headerBannerTitle__verticalLine {
+  width: 12px;
+  background-color: #f16d7f;
+  margin-right: 12px;
+}
+
+.headerBannerTitle__text {
+  font: 900 60px/42px "Lato";
+  color: #222222;
+}
+
+.headerBannerTitle__text_secondLine {
+  font-size: 40px;
+}
+
+.headerBannerTitle__text_pinkWord {
+  font-size: 40px;
+  color: #f16d7f;
+}
+
+.offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 98px auto 100px;
+}
+
+.Column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Column_reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.Column__bigItem {
+  height: 542px;
+  width: 560px;
+  margin: 0 20px 20px 0;
+}
+
+.Column__bigItem_forMen {
+  background: url(../img/offers/men.png) no-repeat center/cover;
+}
+
+.Column__bigItem_forKids {
+  background: url(../img/offers/forKids.png) no-repeat center/cover;
+}
+
+.Column__lilItem {
+  width: 560px;
+  height: 261px;
+  margin: 0 20px 20px 0;
+}
+
+.Column__lilItem_accesories {
+  background: url(../img/offers/accesories.png) no-repeat center/cover;
+}
+
+.Column__lilItem_forWomen {
+  background: url(../img/offers/forWomen.png) no-repeat center/cover;
+}
+
+.offerTitle {
+  background-color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 82px;
+  margin-top: 26px;
+  padding: 16px 20px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #222222;
+}
+
+.offerTitle_pinkWords {
+  font-size: 30px;
+  color: #f16d7f;
+}
+/*# sourceMappingURL=style.css.map */
