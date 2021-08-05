@@ -1,6 +1,9 @@
+$pink: #f16d7f;
+
 * {
   margin: 0;
   padding: 0;
+  outline: none;
   font-family: "Lato", sans-serif;
 }
 
@@ -48,7 +51,7 @@
   }
 
   &__auth {
-    background-color: #f16d7f;
+    background-color: $pink;
     color: #ffffff;
     border: none;
     padding: 11px 17px;
@@ -68,21 +71,12 @@
     color: #222222;
     &_pinkLetter {
       font-weight: 900;
-      color: #f16d7f;
+      color: $pink;
     }
   }
 }
 .search {
   display: flex;
-  &__browse {
-    font: 300 14px/32px "Lato";
-    color: #222222;
-    background-color: #cdcdcc;
-    background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
-    border: 1px solid #e6e6e6;
-    border-radius: 3px 0px 0px 3px;
-    padding: 8px;
-  }
 
   &__que {
     width: 281px;
@@ -97,17 +91,84 @@
   }
 }
 
+#browse[open] > summary.browse > .fa-caret-right {
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+
+.fa-caret-right {
+  transition: 0.2s;
+}
+.browse {
+  font: 300 14px/32px "Lato";
+  color: #222222;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+  border: 1px solid #e6e6e6;
+  border-radius: 3px 0px 0px 3px;
+  padding: 2px 10px;
+  list-style-type: none;
+  cursor: pointer;
+
+  &__name {
+    margin-right: 8px;
+  }
+
+  &__down {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 15px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: -4px;
+      left: 62px;
+      background-color: #fff;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__subtitle {
+    width: 236px;
+    font: 400 14px/32px "Lato";
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #232323;
+    border-bottom: 1px solid #e8e8e8;
+
+    &_next {
+      margin-top: 20px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font: 400 14px/28px "Lato";
+    letter-spacing: 0.025em;
+    color: #4f4f4f;
+
+    &:hover {
+      color: $pink;
+      transition: 0.1s;
+    }
+  }
+}
+
 .navLinks {
   display: flex;
-  justify-content: space-between;
-  width: 680px;
+  align-items: center;
+  width: 690px;
   margin: 0 auto;
-  padding: 20px 0;
 
   &__item {
     font: 700 14px/26px "Lato";
     color: #222222;
     text-transform: uppercase;
+    padding: 20px;
   }
 }
 
@@ -120,8 +181,9 @@
 
     &__verticalLine {
       width: 12px;
-      background-color: #f16d7f;
+      background-color: $pink;
       margin-right: 12px;
+      height: 87px;
     }
 
     &__text {
@@ -134,7 +196,7 @@
 
       &_pinkWord {
         font-size: 40px;
-        color: #f16d7f;
+        color: $pink;
       }
     }
   }
@@ -180,6 +242,7 @@
 }
 
 .offerTitle {
+  display: block;
   background-color: #fff;
   width: fit-content;
   height: 82px;
@@ -194,6 +257,61 @@
   color: #222222;
   &_pinkWords {
     font-size: 30px;
-    color: #f16d7f;
+    color: $pink;
+  }
+}
+
+.featuredItems {
+  text-align: center;
+  &__title {
+    font: 700 30px "Lato";
+    color: #222222;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font: 400 14px "Lato";
+    color: #9f9f9f;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    background-color: $pink;
+    border: none;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #fff;
+    width: 212px;
+  }
+}
+
+.itemsCardBox {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.productCard {
+  margin: 39px 0 58px;
+  &__title {
+    font: 13px "Lato";
+    text-transform: uppercase;
+    color: #222222;
+    margin: 19px 0 17px 14px;
+  }
+
+  &__price {
+    margin: 0 0 21px 14px;
+    font: 700 16px "Lato";
+    text-transform: uppercase;
+    color: $pink;
+  }
+
+  &:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
   }
 }

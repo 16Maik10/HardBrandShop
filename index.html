@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <header class="header">
@@ -25,9 +26,31 @@
               </p>
             </a>
             <form action="#" class="search">
-              <select class="search__browse">
-                <option value="browse">Browse</option>
-              </select>
+              <details id="browse">
+                <summary class="browse">
+                  <span class="browse__name">Browse</span>
+                  <span class="fa fa-caret-right"></span>
+                </summary>
+                <div class="browse__down">
+                  <h3 class="browse__subtitle">Women</h3>
+                  <a href="#" class="browse__link link">Dresses</a
+                  ><a href="#" class="browse__link link">Tops</a
+                  ><a href="#" class="browse__link link">Sweaters/Knits</a
+                  ><a href="#" class="browse__link link">Jackets/Coats</a
+                  ><a href="#" class="browse__link link">Blazers</a
+                  ><a href="#" class="browse__link link">Denim</a
+                  ><a href="#" class="browse__link link">Leggings/Pants</a
+                  ><a href="#" class="browse__link link">Skirts/Shorts</a
+                  ><a href="#" class="browse__link link">Accessories</a>
+                  <h3 class="browse__subtitle browse__subtitle_next">Men</h3>
+                  <a href="#" class="browse__link link">Tees/Tank tops</a
+                  ><a href="#" class="browse__link link">Shirts/Polos</a
+                  ><a href="#" class="browse__link link">Sweaters</a
+                  ><a href="#" class="browse__link link">Sweatshirts/Hoodies</a
+                  ><a href="#" class="browse__link link">Blazers</a
+                  ><a href="#" class="browse__link link">Jackets/vests</a>
+                </div>
+              </details>
               <input
                 type="text"
                 class="search__que"
@@ -68,36 +91,117 @@
     <div class="offers container">
       <div class="Column">
         <div class="Column__bigItem Column__bigItem_forMen">
-          <p class="offerTitle">
+          <a href="#" class="offerTitle link">
             hOT dEAL
             <br />
             <span class="offerTitle_pinkWords">FOR MEN</span>
-          </p>
+          </a>
         </div>
         <div class="Column__lilItem Column__lilItem_accesories">
-          <p class="offerTitle">
+          <a href="#" class="offerTitle link">
             LUXIROUS & trendy
             <br />
             <span class="offerTitle_pinkWords">ACCESORIES</span>
-          </p>
+          </a>
         </div>
       </div>
       <div class="Column Column_reverse">
         <div class="Column__bigItem Column__bigItem_forKids">
-          <p class="offerTitle">
+          <a href="#" class="offerTitle link">
             new arrivals
             <br />
             <span class="offerTitle_pinkWords"> FOR kids</span>
-          </p>
+          </a>
         </div>
         <div class="Column__lilItem Column__lilItem_forWomen">
-          <p class="offerTitle">
+          <a href="#" class="offerTitle link">
             30% offer
             <br />
             <span class="offerTitle_pinkWords">FOR women</span>
-          </p>
+          </a>
         </div>
       </div>
+    </div>
+    <div class="featuredItems container">
+      <h3 class="featuredItems__title">Fetured Items</h3>
+      <p class="featuredItems__text">
+        Shop for items based on what we featured in this week
+      </p>
+      <div class="itemsCardBox">
+        <div class="productCard">
+          <img
+            src="img/product/product01.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product02.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product03.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product04.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product05.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product06.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product07.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+        <div class="productCard">
+          <img
+            src="img/product/product08.jpg"
+            alt="photo"
+            class="productCard__photo"
+          />
+          <h4 class="productCard__title">Mango People T-shirt</h4>
+          <p class="productCard__price">$52.00</p>
+        </div>
+      </div>
+      <button class="featuredItems__button button">Browse All Product</button>
     </div>
   </body>
 </html>
