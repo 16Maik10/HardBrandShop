@@ -147,19 +147,22 @@
   position: absolute;
   background-color: #fff;
   padding: 20px 15px;
+  border: 1px solid #e8e8e8;
 }
 
 .browse__down::before {
   content: "";
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: -4px;
+  top: -7px;
   left: 62px;
   background-color: #fff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  border-top: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
 }
 
 .browse__subtitle {
@@ -197,13 +200,69 @@
           align-items: center;
   width: 690px;
   margin: 0 auto;
+  list-style-type: none;
+  position: relative;
 }
 
-.navLinks__item {
+.navLinks__link {
   font: 700 14px/26px "Lato";
   color: #222222;
   text-transform: uppercase;
   padding: 20px;
+}
+
+.navLinks__item:hover .browse__down_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.browse__down_menu {
+  display: none;
+  padding: 20px 25px;
+  top: 50px;
+  left: 82px;
+  border-radius: 5px;
+}
+
+.browse__down_menu::before {
+  left: 31px;
+}
+
+.browse__down_women::before {
+  left: 117px;
+}
+
+.browse__down_kids::before {
+  left: 198px;
+}
+
+.browse__down_accesoriese::before {
+  left: 302px;
+}
+
+.browse__down_featured::before {
+  left: 424px;
+}
+
+.browse__down_hotDeals::before {
+  left: 538px;
+}
+
+.megaMenu__Column {
+  margin-right: 46px;
+}
+
+.megaMenu__Column_last {
+  margin-right: 0;
+}
+
+.megaMenu__Block_last {
+  margin-top: 23px;
+}
+
+.megaMenu__img {
+  margin-top: 47px;
 }
 
 .headerBanner {
