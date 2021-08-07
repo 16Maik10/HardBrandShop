@@ -21,11 +21,9 @@ $pink: #f16d7f;
 }
 
 .header {
-  &__shadowBox {
-    background-color: #ffffff;
-    border: 1px solid #ececec;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
-  }
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
 }
 .headerTop {
   display: flex;
@@ -52,9 +50,22 @@ $pink: #f16d7f;
 
   &__auth {
     background-color: $pink;
-    color: #ffffff;
-    border: none;
+    color: #fff;
+    border: 1px solid #fff;
     padding: 11px 17px;
+    box-sizing: border-box;
+    font-size: 15px;
+
+    &:hover {
+      color: $pink;
+      background-color: #fff;
+      border: 1px solid $pink;
+      transition: 0.2s;
+    }
+  }
+
+  &__auth > .fa {
+    margin-left: 8px;
   }
 }
 .logo {
@@ -116,6 +127,7 @@ $pink: #f16d7f;
 
   &__down {
     position: absolute;
+    z-index: 1;
     background-color: #fff;
     padding: 20px 15px;
     border: 1px solid #e8e8e8;
@@ -127,7 +139,7 @@ $pink: #f16d7f;
       height: 10px;
       position: absolute;
       top: -7px;
-      left: 62px;
+      left: 64px;
       background-color: #fff;
       transform: rotate(45deg);
       border-top: 1px solid #e8e8e8;
@@ -238,7 +250,7 @@ $pink: #f16d7f;
   }
 }
 
-.headerBanner {
+.Banner {
   height: 614px;
   background: url(../img/header/header_bg.png) no-repeat top center / cover;
   &Title {
@@ -343,14 +355,22 @@ $pink: #f16d7f;
 
   &__button {
     background-color: $pink;
-    border: none;
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 54px;
-    font-weight: 700;
-    letter-spacing: 0.025em;
+    border: 1px solid #fff;
+    padding: 0 20px 0 24px;
+    box-sizing: border-box;
+    font: 700 16px/54px "Lato";
     color: #fff;
-    width: 212px;
+
+    &:hover {
+      color: $pink;
+      background-color: #fff;
+      border: 1px solid $pink;
+      transition: 0.2s;
+    }
+  }
+
+  &__button > .fa {
+    margin-left: 9px;
   }
 }
 
@@ -361,16 +381,22 @@ $pink: #f16d7f;
   flex-wrap: wrap;
 }
 .productCard {
-  margin: 39px 0 58px;
+  margin: 39px 0;
+  position: relative;
+  display: block;
+
+  &__desc {
+    padding: 20px 15px;
+  }
+
   &__title {
     font: 13px "Lato";
     text-transform: uppercase;
     color: #222222;
-    margin: 19px 0 17px 14px;
   }
 
   &__price {
-    margin: 0 0 21px 14px;
+    padding-top: 17px;
     font: 700 16px "Lato";
     text-transform: uppercase;
     color: $pink;
@@ -379,5 +405,26 @@ $pink: #f16d7f;
   &:hover {
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
     transition: 0.2s;
+  }
+
+  &:hover > &__photo {
+    filter: brightness(0.25);
+  }
+
+  &:hover > &__buy {
+    display: inline-block;
+  }
+
+  &__buy {
+    display: none;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    position: absolute;
+    font: 700 13px "Lato";
+    right: 70px;
+    top: 98px;
+    padding: 10px 15px 10px 43px;
+    background: url(../img/product/bye.png) no-repeat 10px;
   }
 }
