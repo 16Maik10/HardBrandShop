@@ -16,6 +16,10 @@ $pink: #f16d7f;
   cursor: pointer;
 }
 
+.pinkWord {
+  color: $pink;
+}
+
 .link {
   text-decoration: none;
 }
@@ -247,7 +251,22 @@ $pink: #f16d7f;
 
   &__img {
     margin-top: 47px;
+    position: relative;
+    width: 255px;
+    height: 118px;
+    background: url(../img/header/menu_img.png) no-repeat center / cover;
+
+    &Desc{
+      position: absolute;
+      text-transform: uppercase;
+      top: 61px;
+      right: 10px;
+      font: 900 22px/28px "Lato";
+      color: #fff;
+    }
   }
+
+
 }
 
 .Banner {
@@ -270,11 +289,6 @@ $pink: #f16d7f;
 
       &_secondLine {
         font-size: 40px;
-      }
-
-      &_pinkWord {
-        font-size: 40px;
-        color: $pink;
       }
     }
   }
@@ -335,7 +349,6 @@ $pink: #f16d7f;
   color: #222222;
   &_pinkWords {
     font-size: 30px;
-    color: $pink;
   }
 }
 
@@ -427,4 +440,60 @@ $pink: #f16d7f;
     padding: 10px 15px 10px 43px;
     background: url(../img/product/bye.png) no-repeat 10px;
   }
+}
+
+
+.feature{
+  display: flex;
+  margin-top: 132px;
+  &__banner{
+      background: url(../img/feature/feature_bg.png) no-repeat center / cover;
+      flex-grow: 2;
+      position: relative;
+  }
+
+  &__offer{
+    display: block;
+    font: 700 53.7px/1.2 "Lato";
+    color: #ffffff;
+    position: absolute;
+    top: 146px;
+    left: 40px;
+    }
+  }
+
+
+.features{
+  background-color: #222224;
+  padding: 48px 43px 66px 32px;
+
+  &__item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 54px;
+    width: 300px;
+    justify-content: space-between;
+  }
+
+  &__item:last-of-type{
+    margin-bottom: 0;
+  }
+
+  &__desc{
+    
+     max-width: 219px;
+  }
+
+  &__title{
+    font: 700 20px/24px "Lato";
+    color: #fbfbfb;
+    padding: 8px 3px 17px;
+  }
+
+  &__text{
+    font: 300 14px/24px "Lato";
+    color: #fbfbfb;
+  }
+
+
 }
