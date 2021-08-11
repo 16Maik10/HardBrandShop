@@ -326,6 +326,10 @@
   font-size: 40px;
 }
 
+.BannerTitle__text_lastWord {
+  font-size: 40px;
+}
+
 .offers {
   display: -webkit-box;
   display: -ms-flexbox;
