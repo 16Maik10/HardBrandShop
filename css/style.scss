@@ -7,7 +7,7 @@ $pink: #f16d7f;
   font-family: "Lato", sans-serif;
 }
 
-.container {
+.myContainer {
   width: 1140px;
   margin: 0 auto;
 }
@@ -20,7 +20,7 @@ $pink: #f16d7f;
   color: $pink;
 }
 
-.link {
+.myLink {
   text-decoration: none;
 }
 
@@ -177,22 +177,26 @@ $pink: #f16d7f;
   }
 }
 
-.navLinks {
+.navlinks {
   display: flex;
   align-items: center;
   width: 690px;
   margin: 0 auto;
   list-style-type: none;
-  position: relative;
 
   &__link {
     font: 700 14px/26px "Lato";
     color: #222222;
     text-transform: uppercase;
     padding: 20px;
+
+    &:hover {
+      box-shadow: 0 0 5px #000;
+    }
   }
 
   &__item {
+    position: relative;
     &:hover .browse__down_menu {
       display: flex;
     }
@@ -204,33 +208,19 @@ $pink: #f16d7f;
     &_menu {
       display: none;
       padding: 20px 25px;
-      top: 50px;
-      left: 82px;
+      top: 38px;
       border-radius: 5px;
 
       &::before {
         left: 31px;
       }
     }
-
-    &_women::before {
-      left: 117px;
-    }
-
-    &_kids::before {
-      left: 198px;
-    }
-
-    &_accesoriese::before {
-      left: 302px;
-    }
-
-    &_featured::before {
-      left: 424px;
-    }
-
-    &_hotDeals::before {
-      left: 538px;
+    &_last {
+      right: 0;
+      &::before {
+        left: auto;
+        right: 50px;
+      }
     }
   }
 }
@@ -250,13 +240,17 @@ $pink: #f16d7f;
   }
 
   &__img {
+    display: block;
     margin-top: 47px;
     position: relative;
     width: 255px;
     height: 118px;
     background: url(../img/header/menu_img.png) no-repeat center / cover;
+    &:hover {
+      box-shadow: 0 0 5px #000;
+    }
 
-    &Desc{
+    &Desc {
       position: absolute;
       text-transform: uppercase;
       top: 61px;
@@ -265,8 +259,6 @@ $pink: #f16d7f;
       color: #fff;
     }
   }
-
-
 }
 
 .Banner {
@@ -291,7 +283,7 @@ $pink: #f16d7f;
         font-size: 40px;
       }
 
-      &_lastWord{
+      &_lastWord {
         font-size: 40px;
       }
     }
@@ -354,6 +346,10 @@ $pink: #f16d7f;
   &_pinkWords {
     font-size: 30px;
   }
+
+  &:hover {
+    box-shadow: 0 0 5px #000;
+  }
 }
 
 .featuredItems {
@@ -400,6 +396,21 @@ $pink: #f16d7f;
 .productCard {
   margin: 39px 0;
   position: relative;
+  &:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.2s;
+  }
+
+  &:hover .product__photo {
+    filter: brightness(0.25);
+    transition: 0.2s;
+  }
+  &:hover .addBox__button {
+    display: block;
+  }
+}
+
+.product {
   display: block;
 
   &__desc {
@@ -418,60 +429,61 @@ $pink: #f16d7f;
     text-transform: uppercase;
     color: $pink;
   }
+}
 
-  &:hover {
-    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
-    transition: 0.2s;
-  }
+.addBox {
+  position: absolute;
+  top: 98px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-  &:hover > &__photo {
-    filter: brightness(0.25);
-  }
-
-  &:hover > &__buy {
-    display: inline-block;
-  }
-
-  &__buy {
+  &__button {
     display: none;
     border: 1px solid #fff;
     box-sizing: border-box;
     color: #fff;
-    position: absolute;
     font: 700 13px "Lato";
     right: 70px;
-    top: 98px;
     padding: 10px 15px 10px 43px;
     background: url(../img/product/bye.png) no-repeat 10px;
+
+    &:hover {
+      box-shadow: 0 0 10px #fff;
+      transition: 0.2s;
+    }
   }
 }
 
-
-.feature{
+.feature {
   display: flex;
   margin-top: 132px;
-  &__banner{
-      background: url(../img/feature/feature_bg.png) no-repeat center / cover;
-      flex-grow: 2;
-      position: relative;
+  &__banner {
+    background: url(../img/feature/feature_bg.png) no-repeat center / cover;
+    flex-grow: 2;
+    position: relative;
   }
 
-  &__offer{
+  &__offer {
     display: block;
     font: 700 53.7px/1.2 "Lato";
     color: #ffffff;
     position: absolute;
     top: 146px;
     left: 40px;
+
+    &:hover {
+      text-shadow: 0 0 10px $pink;
+      transition: 0.2s;
     }
   }
+}
 
-
-.features{
+.features {
   background-color: #222224;
   padding: 48px 43px 66px 32px;
 
-  &__item{
+  &__item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 54px;
@@ -479,25 +491,186 @@ $pink: #f16d7f;
     justify-content: space-between;
   }
 
-  &__item:last-of-type{
+  &__item:last-of-type {
     margin-bottom: 0;
   }
 
-  &__desc{
-    
-     max-width: 219px;
+  &__desc {
+    max-width: 219px;
   }
 
-  &__title{
+  &__title {
     font: 700 20px/24px "Lato";
     color: #fbfbfb;
     padding: 8px 3px 17px;
   }
 
-  &__text{
+  &__text {
     font: 300 14px/24px "Lato";
     color: #fbfbfb;
   }
+}
 
+.subscribe {
+  background: url(../img/subscribe/bg.png) no-repeat center / cover;
 
+  &__body {
+    display: flex;
+    padding: 111px 0 168px;
+    justify-content: space-between;
+  }
+}
+.creator {
+  display: flex;
+  align-items: flex-start;
+
+  &__desc {
+    padding: 12px 28px;
+  }
+
+  &__text {
+    font: 400 italic 16px/26px "Lato";
+    color: #222224;
+    max-width: 365px;
+    text-align: justify;
+  }
+
+  &__sign {
+    margin-top: 8px;
+    font: 300 14px "Lato";
+    color: #222224;
+
+    &_pinkWord {
+      font: 700 16px/26px "Lato";
+      letter-spacing: 0.025em;
+    }
+  }
+}
+.subscriber {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 110px;
+
+  &__text {
+    font: normal 14px/24px "Lato";
+    text-align: center;
+    color: #222224;
+  }
+
+  &__title {
+    font: 400 24px/54px "Lato";
+  }
+
+  &__form {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  &__email-area {
+    border: 1px solid #e1e1e1;
+    outline: none;
+    padding: 7px 22px;
+    width: 334px;
+    box-sizing: border-box;
+    height: 46px;
+    border-radius: 20px 0 0 20px;
+    background: #e1e1e1;
+  }
+
+  &__button {
+    border: 1px solid $pink;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;
+    background: $pink;
+    color: #fff;
+    padding: 13px 22px;
+
+    &:hover {
+      color: $pink;
+      background-color: #fff;
+      transition: 0.2s;
+    }
+  }
+}
+
+.footer {
+  &NavLinks {
+    padding: 111px 0 90px;
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &Col {
+    &__text {
+      font: 300 14px/24px "Lato";
+      letter-spacing: 0.025em;
+      color: #898989;
+      max-width: 427px;
+      margin-top: 30px;
+    }
+
+    &__title {
+      font: 700 18px/26px "Lato";
+      letter-spacing: 0.025em;
+      color: #f16d7f;
+      margin: 14px 0 28px;
+    }
+
+    &__link {
+      display: block;
+      font: 400 16px/42px "Lato";
+      letter-spacing: 0.025em;
+      color: #898989;
+
+      &:hover {
+        color: $pink;
+        transition: 0.1s;
+      }
+    }
+  }
+
+  &Bottom {
+    background-color: #e6e6e6;
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
+
+    &__copyright {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 42px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #7a7a7a;
+    }
+
+    &__iconsGroup {
+      display: flex;
+      align-items: center;
+    }
+
+    &__link {
+      width: 32px;
+      font: 400 16px/32px "Lato";
+      letter-spacing: 0.025em;
+      color: #b2b2b2;
+      background-color: #fff;
+      text-align: center;
+      margin-left: 8px;
+
+      &:hover {
+        background-color: $pink;
+        color: #f7f7f8;
+        transition: 0.2s;
+      }
+    }
+  }
 }
