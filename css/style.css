@@ -412,12 +412,9 @@ dd {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 82px;
   margin-top: 26px;
-  padding: 16px 20px;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 900;
+  padding: 12px 20px;
+  font: 900 18px "Lato";
   text-transform: uppercase;
   letter-spacing: 0.025em;
   -webkit-box-sizing: border-box;
@@ -631,6 +628,7 @@ dd {
 
 .subscribe {
   background: url(../img/subscribe/bg.png) no-repeat center/cover;
+  margin-top: 97px;
 }
 
 .subscribe__body {
@@ -641,6 +639,9 @@ dd {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .creator {
@@ -659,8 +660,7 @@ dd {
 .creator__text {
   font: 400 italic 16px/26px "Lato";
   color: #222224;
-  max-width: 365px;
-  text-align: justify;
+  max-width: 386px;
 }
 
 .creator__sign {
@@ -672,6 +672,25 @@ dd {
 .creator__sign_pinkWord {
   font: 700 16px/26px "Lato";
   letter-spacing: 0.025em;
+}
+
+.carousel-inner {
+  width: 505px;
+}
+
+.carousel-indicators {
+  position: relative;
+  margin-left: 110px;
+}
+
+.carousel-indicators > [data-bs-target] {
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+}
+
+.carousel-indicators > [data-bs-target].active {
+  background-color: #f16d7f;
 }
 
 .subscriber {
@@ -688,17 +707,21 @@ dd {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 110px;
+  margin: 25px 91px 0 0;
 }
 
 .subscriber__text {
-  font: normal 14px/24px "Lato";
   text-align: center;
-  color: #222224;
 }
 
 .subscriber__title {
   font: 400 24px/54px "Lato";
+}
+
+.subscriber__secondLine {
+  font: normal 14px "Lato";
+  text-align: center;
+  color: #222224;
 }
 
 .subscriber__form {
@@ -721,6 +744,7 @@ dd {
 }
 
 .subscriber__button {
+  font-size: 13.5px;
   line-height: 0;
   border: 1px solid #f16d7f;
   -webkit-box-sizing: border-box;

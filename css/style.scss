@@ -355,12 +355,9 @@ dd {
   display: block;
   background-color: #fff;
   width: fit-content;
-  height: 82px;
   margin-top: 26px;
-  padding: 16px 20px;
-  font-family: Lato;
-  font-size: 18px;
-  font-weight: 900;
+  padding: 12px 20px;
+  font: 900 18px "Lato";
   text-transform: uppercase;
   letter-spacing: 0.025em;
   box-sizing: border-box;
@@ -537,11 +534,12 @@ dd {
 
 .subscribe {
   background: url(../img/subscribe/bg.png) no-repeat center / cover;
-
+  margin-top: 97px;
   &__body {
     display: flex;
     padding: 111px 0 168px;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 .creator {
@@ -555,8 +553,7 @@ dd {
   &__text {
     font: 400 italic 16px/26px "Lato";
     color: #222224;
-    max-width: 365px;
-    text-align: justify;
+    max-width: 386px;
   }
 
   &__sign {
@@ -570,21 +567,44 @@ dd {
     }
   }
 }
+
+.carousel {
+  &-inner {
+    width: 505px;
+  }
+  &-indicators {
+    position: relative;
+    margin-left: 110px;
+    & > [data-bs-target] {
+      width: 38px;
+      height: 4px;
+      background-color: #d6d6d6;
+
+      &.active {
+        background-color: $pink;
+      }
+    }
+  }
+}
 .subscriber {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 110px;
+  margin: 25px 91px 0 0;
 
   &__text {
-    font: normal 14px/24px "Lato";
     text-align: center;
-    color: #222224;
   }
 
   &__title {
     font: 400 24px/54px "Lato";
+  }
+
+  &__secondLine {
+    font: normal 14px "Lato";
+    text-align: center;
+    color: #222224;
   }
 
   &__form {
