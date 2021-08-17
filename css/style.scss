@@ -1,5 +1,27 @@
 $pink: #f16d7f;
 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+.myLink:hover {
+  color: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -450,6 +472,7 @@ $pink: #f16d7f;
 
     &:hover {
       box-shadow: 0 0 10px #fff;
+      color: #fff;
       transition: 0.2s;
     }
   }
@@ -467,12 +490,13 @@ $pink: #f16d7f;
   &__offer {
     display: block;
     font: 700 53.7px/1.2 "Lato";
-    color: #ffffff;
+    color: #fff;
     position: absolute;
     top: 146px;
     left: 40px;
 
     &:hover {
+      color: #fff;
       text-shadow: 0 0 10px $pink;
       transition: 0.2s;
     }
@@ -580,6 +604,8 @@ $pink: #f16d7f;
   }
 
   &__button {
+    font-size: 13.5px;
+    line-height: 0;
     border: 1px solid $pink;
     box-sizing: border-box;
     border-radius: 0 20px 20px 0;
