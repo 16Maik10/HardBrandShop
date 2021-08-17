@@ -249,16 +249,21 @@ dd {
   font: 700 14px/26px "Lato";
   color: #222222;
   text-transform: uppercase;
-  padding: 20px;
 }
 
-.navlinks__link:hover {
-  -webkit-box-shadow: 0 0 5px #000;
-          box-shadow: 0 0 5px #000;
+.navlinks__link_opened {
+  border-bottom: 3px solid #ef5b70;
 }
 
 .navlinks__item {
   position: relative;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+.navlinks__item:hover {
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
 }
 
 .navlinks__item:hover .browse__down_menu {
@@ -270,7 +275,8 @@ dd {
 .browse__down_menu {
   display: none;
   padding: 20px 25px;
-  top: 38px;
+  top: 40px;
+  left: 0;
   border-radius: 5px;
 }
 
@@ -280,6 +286,7 @@ dd {
 
 .browse__down_last {
   right: 0;
+  left: auto;
 }
 
 .browse__down_last::before {
@@ -299,7 +306,7 @@ dd {
   margin-top: 23px;
 }
 
-.megaMenu__img {
+.menuImg {
   display: block;
   margin-top: 47px;
   position: relative;
@@ -308,12 +315,12 @@ dd {
   background: url(../img/header/menu_img.png) no-repeat center/cover;
 }
 
-.megaMenu__img:hover {
+.menuImg:hover {
   -webkit-box-shadow: 0 0 5px #000;
           box-shadow: 0 0 5px #000;
 }
 
-.megaMenu__imgDesc {
+.menuImg__desc {
   position: absolute;
   text-transform: uppercase;
   top: 61px;
@@ -482,6 +489,7 @@ dd {
 }
 
 .productCard {
+  display: block;
   margin: 39px 0;
   position: relative;
 }
@@ -506,6 +514,7 @@ dd {
 
 .product {
   display: block;
+  position: relative;
 }
 
 .product__desc {
@@ -523,6 +532,10 @@ dd {
   font: 700 16px "Lato";
   text-transform: uppercase;
   color: #f16d7f;
+}
+
+.product:hover .addBox__button {
+  display: block;
 }
 
 .addBox {
