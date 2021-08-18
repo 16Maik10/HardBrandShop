@@ -226,6 +226,10 @@ dd {
     &:hover .browse__down_menu {
       display: flex;
     }
+
+    &_active {
+      border-bottom: 3px solid #ef5b70;
+    }
   }
 }
 
@@ -730,5 +734,43 @@ dd {
         transition: 0.2s;
       }
     }
+  }
+}
+
+/*---------- PRODUCT ---------- */
+
+.navAdress {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 65px 0;
+  }
+
+  &__currentPoint {
+    font: 900 24px/20px "Lato";
+    text-transform: uppercase;
+    color: $pink;
+    padding-left: 9px;
+  }
+}
+
+.breadcrumb {
+  align-items: baseline;
+  &__link {
+    font: 300 14px/20px "Lato";
+    text-transform: uppercase;
+    color: #636363;
+
+    &:hover {
+      color: $pink;
+      transition: 0.2s;
+    }
+  }
+
+  &-item:last-child {
+    font: 700 14px/20px "Lato";
+    text-transform: uppercase;
+    color: $pink;
   }
 }

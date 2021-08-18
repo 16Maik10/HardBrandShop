@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerTop myContainer">
+        <div class="headerTop__left">
+          <a href="index.html" class="logo myLink">
+            <img src="img/header/logo.png" alt="logo" class="logo__icon" />
+            <p class="logo__title">
+              bran<span class="logo__title_pinkLetter">d</span>
+            </p>
+          </a>
+          <form action="#" class="search">
+            <details id="browse">
+              <summary class="browse">
+                <span class="browse__name">Browse</span>
+                <span class="fa fa-caret-right"></span>
+              </summary>
+              <div class="browse__down">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a
+                ><a href="#" class="browse__link myLink">Blazers</a
+                ><a href="#" class="browse__link myLink">Denim</a
+                ><a href="#" class="browse__link myLink">Leggings/Pants</a
+                ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+                ><a href="#" class="browse__link myLink">Accessories</a>
+                <h3 class="browse__subtitle browse__subtitle_next">Men</h3>
+                <a href="#" class="browse__link myLink">Tees/Tank tops</a
+                ><a href="#" class="browse__link myLink">Shirts/Polos</a
+                ><a href="#" class="browse__link myLink">Sweaters</a
+                ><a href="#" class="browse__link myLink">Sweatshirts/Hoodies</a
+                ><a href="#" class="browse__link myLink">Blazers</a
+                ><a href="#" class="browse__link myLink">Jackets/vests</a>
+              </div>
+            </details>
+            <input
+              type="text"
+              class="search__que"
+              placeholder="Search for Item..."
+            />
+            <button type="submit" class="search__enter button"></button>
+          </form>
+        </div>
+        <div class="headerTop__right">
+          <button class="headerTop__cart button"></button>
+          <button class="headerTop__auth button">
+            My Account
+            <span class="fa fa-caret-down"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav class="navMenu">
+      <ul class="navlinks">
+        <li class="navlinks__item">
+          <a href="index.html" class="navlinks__link myLink">Home</a>
+        </li>
+        <li class="navlinks__item navlinks__item_active">
+          <a href="#" class="navlinks__link navlinks__link myLink">Men</a>
+          <div class="browse__down browse__down_menu">
+            <div class="megaMenu__Column">
+              <h3 class="browse__subtitle">Women</h3>
+              <a href="#" class="browse__link myLink">Dresses</a
+              ><a href="#" class="browse__link myLink">Tops</a
+              ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+              ><a href="#" class="browse__link myLink">Jackets/Coats</a
+              ><a href="#" class="browse__link myLink">Blazers</a
+              ><a href="#" class="browse__link myLink">Denim</a
+              ><a href="#" class="browse__link myLink">Leggings/Pants</a
+              ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+              ><a href="#" class="browse__link myLink">Accessories</a>
+            </div>
+            <div class="megaMenu__Column">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a>
+              </div>
+              <div class="megaMenu__Block megaMenu__Block_last">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+            </div>
+            <div class="megaMenu__Column megaMenu__Column_last">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+              <a href="#" class="menuImg myLink">
+                <div class="menuImg__desc">
+                  <p class="menuImg__firstLine">super</p>
+                  <p class="menuImg__firstLine">sale!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="navlinks__item">
+          <a href="#" class="navlinks__link myLink">Women</a>
+          <div class="browse__down browse__down_menu">
+            <div class="megaMenu__Column">
+              <h3 class="browse__subtitle">Women</h3>
+              <a href="#" class="browse__link myLink">Dresses</a
+              ><a href="#" class="browse__link myLink">Tops</a
+              ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+              ><a href="#" class="browse__link myLink">Jackets/Coats</a
+              ><a href="#" class="browse__link myLink">Blazers</a
+              ><a href="#" class="browse__link myLink">Denim</a
+              ><a href="#" class="browse__link myLink">Leggings/Pants</a
+              ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+              ><a href="#" class="browse__link myLink">Accessories</a>
+            </div>
+            <div class="megaMenu__Column">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a>
+              </div>
+              <div class="megaMenu__Block megaMenu__Block_last">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+            </div>
+            <div class="megaMenu__Column megaMenu__Column_last">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+              <a href="#" class="menuImg myLink">
+                <div class="menuImg__desc">
+                  <p class="menuImg__firstLine">super</p>
+                  <p class="menuImg__firstLine">sale!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="navlinks__item">
+          <a href="#" class="navlinks__link myLink">Kids</a>
+          <div class="browse__down browse__down_menu">
+            <div class="megaMenu__Column">
+              <h3 class="browse__subtitle">Women</h3>
+              <a href="#" class="browse__link myLink">Dresses</a
+              ><a href="#" class="browse__link myLink">Tops</a
+              ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+              ><a href="#" class="browse__link myLink">Jackets/Coats</a
+              ><a href="#" class="browse__link myLink">Blazers</a
+              ><a href="#" class="browse__link myLink">Denim</a
+              ><a href="#" class="browse__link myLink">Leggings/Pants</a
+              ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+              ><a href="#" class="browse__link myLink">Accessories</a>
+            </div>
+            <div class="megaMenu__Column">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a>
+              </div>
+              <div class="megaMenu__Block megaMenu__Block_last">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+            </div>
+            <div class="megaMenu__Column megaMenu__Column_last">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+              <a href="#" class="menuImg myLink">
+                <div class="menuImg__desc">
+                  <p class="menuImg__firstLine">super</p>
+                  <p class="menuImg__firstLine">sale!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="navlinks__item">
+          <a href="#" class="navlinks__link myLink">Accesories</a>
+          <div class="browse__down browse__down_menu">
+            <div class="megaMenu__Column">
+              <h3 class="browse__subtitle">Women</h3>
+              <a href="#" class="browse__link myLink">Dresses</a
+              ><a href="#" class="browse__link myLink">Tops</a
+              ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+              ><a href="#" class="browse__link myLink">Jackets/Coats</a
+              ><a href="#" class="browse__link myLink">Blazers</a
+              ><a href="#" class="browse__link myLink">Denim</a
+              ><a href="#" class="browse__link myLink">Leggings/Pants</a
+              ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+              ><a href="#" class="browse__link myLink">Accessories</a>
+            </div>
+            <div class="megaMenu__Column">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a>
+              </div>
+              <div class="megaMenu__Block megaMenu__Block_last">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+            </div>
+            <div class="megaMenu__Column megaMenu__Column_last">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+              <a href="#" class="menuImg myLink">
+                <div class="menuImg__desc">
+                  <p class="menuImg__firstLine">super</p>
+                  <p class="menuImg__firstLine">sale!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="navlinks__item">
+          <a href="#" class="navlinks__link myLink">Featured</a>
+          <div class="browse__down browse__down_menu browse__down_last">
+            <div class="megaMenu__Column">
+              <h3 class="browse__subtitle">Women</h3>
+              <a href="#" class="browse__link myLink">Dresses</a
+              ><a href="#" class="browse__link myLink">Tops</a
+              ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+              ><a href="#" class="browse__link myLink">Jackets/Coats</a
+              ><a href="#" class="browse__link myLink">Blazers</a
+              ><a href="#" class="browse__link myLink">Denim</a
+              ><a href="#" class="browse__link myLink">Leggings/Pants</a
+              ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+              ><a href="#" class="browse__link myLink">Accessories</a>
+            </div>
+            <div class="megaMenu__Column">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a>
+              </div>
+              <div class="megaMenu__Block megaMenu__Block_last">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+            </div>
+            <div class="megaMenu__Column megaMenu__Column_last">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+              <a href="#" class="menuImg myLink">
+                <div class="menuImg__desc">
+                  <p class="menuImg__firstLine">super</p>
+                  <p class="menuImg__firstLine">sale!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+        <li class="navlinks__item">
+          <a href="#" class="navlinks__link myLink">Hot Deals</a>
+          <div class="browse__down browse__down_menu browse__down_last">
+            <div class="megaMenu__Column">
+              <h3 class="browse__subtitle">Women</h3>
+              <a href="#" class="browse__link myLink">Dresses</a
+              ><a href="#" class="browse__link myLink">Tops</a
+              ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+              ><a href="#" class="browse__link myLink">Jackets/Coats</a
+              ><a href="#" class="browse__link myLink">Blazers</a
+              ><a href="#" class="browse__link myLink">Denim</a
+              ><a href="#" class="browse__link myLink">Leggings/Pants</a
+              ><a href="#" class="browse__link myLink">Skirts/Shorts</a
+              ><a href="#" class="browse__link myLink">Accessories</a>
+            </div>
+            <div class="megaMenu__Column">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a
+                ><a href="#" class="browse__link myLink">Jackets/Coats</a>
+              </div>
+              <div class="megaMenu__Block megaMenu__Block_last">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+            </div>
+            <div class="megaMenu__Column megaMenu__Column_last">
+              <div class="megaMenu__Block">
+                <h3 class="browse__subtitle">Women</h3>
+                <a href="#" class="browse__link myLink">Dresses</a
+                ><a href="#" class="browse__link myLink">Tops</a
+                ><a href="#" class="browse__link myLink">Sweaters/Knits</a>
+              </div>
+              <a href="#" class="menuImg myLink">
+                <div class="menuImg__desc">
+                  <p class="menuImg__firstLine">super</p>
+                  <p class="menuImg__firstLine">sale!</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <section class="navAdress">
+      <div class="navAdress__body myContainer">
+        <h2 class="navAdress__currentPoint">New Arrivals</h2>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="breadcrumb__link myLink" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="breadcrumb__link myLink" href="#">Men</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              New Arrivals
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="footerNavLinks">
+        <div class="footerNavLinks__body myContainer">
+          <div class="footerNavLinks__Col footerCol">
+            <a href="index.html" class="logo myLink">
+              <img src="img/header/logo.png" alt="logo" class="logo__icon" />
+              <p class="logo__title">
+                bran<span class="logo__title_pinkLetter">d</span>
+              </p>
+            </a>
+            <p class="footerCol__text"></p>
+            <p class="footerCol__text">
+              Objectively transition extensive data rather than cross functional
+              solutions. Monotonectally syndicate multidisciplinary materials
+              before go forward benefits. Intrinsicly syndicate an expanded
+              array of processes and cross-unit partnerships.
+            </p>
+            <p class="footerCol__text">
+              Efficiently plagiarize 24/365 action items and focused
+              infomediaries. Distinctively seize superior initiatives for
+              wireless technologies. Dynamically optimize.
+            </p>
+          </div>
+          <div class="footerNavLinks__Col footerCol">
+            <h4 class="footerCol__title">COMPANY</h4>
+            <a href="index.html" class="footerCol__link myLink">Home</a>
+            <a href="#" class="footerCol__link myLink">Shop</a>
+            <a href="#" class="footerCol__link myLink">About</a>
+            <a href="#" class="footerCol__link myLink">How It Works</a>
+            <a href="#" class="footerCol__link myLink">Contact</a>
+          </div>
+          <div class="footerNavLinks__Col footerCol">
+            <h4 class="footerCol__title">INFORMATION</h4>
+            <a href="#" class="footerCol__link myLink">Tearms & Condition</a>
+            <a href="#" class="footerCol__link myLink">Privacy Policy</a>
+            <a href="#" class="footerCol__link myLink">How to Buy</a>
+            <a href="#" class="footerCol__link myLink">How to Sell</a>
+            <a href="#" class="footerCol__link myLink">Promotion</a>
+          </div>
+          <div class="footerNavLinks__Col footerCol">
+            <h4 class="footerCol__title">SHOP CATEGORY</h4>
+            <a href="#" class="footerCol__link myLink">Men</a>
+            <a href="#" class="footerCol__link myLink">Women</a>
+            <a href="#" class="footerCol__link myLink">Child</a>
+            <a href="#" class="footerCol__link myLink">Apparel</a>
+            <a href="#" class="footerCol__link myLink">Brows All</a>
+          </div>
+        </div>
+      </section>
+      <section class="footerBottom">
+        <div class="footerBottom__body myContainer">
+          <p class="footerBottom__copyright">
+            &copy; 2021 Brand All Rights Reserved.
+          </p>
+          <div class="footerBottom__iconsGroup">
+            <a href="" class="footerBottom__link myLink">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="" class="footerBottom__link myLink">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="" class="footerBottom__link myLink">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="" class="footerBottom__link myLink">
+              <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            </a>
+            <a href="" class="footerBottom__link myLink">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

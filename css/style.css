@@ -272,6 +272,10 @@ dd {
   display: flex;
 }
 
+.navlinks__item_active {
+  border-bottom: 3px solid #ef5b70;
+}
+
 .browse__down_menu {
   display: none;
   padding: 20px 25px;
@@ -863,5 +867,50 @@ dd {
   color: #f7f7f8;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+/*---------- PRODUCT ---------- */
+.navAdress__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding: 65px 0;
+}
+
+.navAdress__currentPoint {
+  font: 900 24px/20px "Lato";
+  text-transform: uppercase;
+  color: #f16d7f;
+  padding-left: 9px;
+}
+
+.breadcrumb {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.breadcrumb__link {
+  font: 300 14px/20px "Lato";
+  text-transform: uppercase;
+  color: #636363;
+}
+
+.breadcrumb__link:hover {
+  color: #f16d7f;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.breadcrumb-item:last-child {
+  font: 700 14px/20px "Lato";
+  text-transform: uppercase;
+  color: #f16d7f;
 }
 /*# sourceMappingURL=style.css.map */
