@@ -225,6 +225,7 @@ dd {
   font: 400 14px/28px "Lato";
   letter-spacing: 0.025em;
   color: #4f4f4f;
+  margin-bottom: 5px;
 }
 
 .browse__link:hover {
@@ -1113,6 +1114,57 @@ dd {
   text-transform: uppercase;
   color: #6f6e6e;
   margin-left: 10px;
+}
+
+.price__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font: 400 14px/26px "Open Sans";
+  font-family: "Open Sans";
+  color: #6f6e6e;
+}
+
+.price__range-slider {
+  width: 262px;
+  height: 6px;
+  margin-bottom: 17px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #f0f0f0;
+}
+
+.noUi-connect {
+  background: #f16d7f;
+}
+
+.noUi-base {
+  z-index: 0;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 14px;
+  height: 14px;
+  right: -10px;
+  top: -5px;
+  border: none;
+  border-radius: 30px;
+  background: #f16d7f;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle::before, .noUi-horizontal .noUi-handle::after {
+  content: none;
+}
+
+.noUi-active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .pageSettings {

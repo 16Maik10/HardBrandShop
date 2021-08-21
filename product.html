@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="slider/nouislider.min.css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -548,7 +549,12 @@
               </form>
             </div>
             <div class="price">
-              <input type="range" />
+              <h4 class="filtersTitle">Price</h4>
+              <div class="price__range-slider" id="range-slider"></div>
+              <div class="price__values">
+                <p class="price__value" id="price-value0"></p>
+                <p class="price__value" id="price-value1"></p>
+              </div>
             </div>
           </div>
           <div class="pageSettings">
@@ -978,5 +984,7 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="slider/nouislider.min.js"></script>
+    <script src="slider/slider.js"></script>
   </body>
 </html>
