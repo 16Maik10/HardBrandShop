@@ -590,10 +590,10 @@ dd {
 }
 
 .carousel {
-  &-inner {
+  &-inner__author {
     width: 505px;
   }
-  &-indicators {
+  &-indicators__author {
     position: relative;
     margin-left: 110px;
     & > [data-bs-target] {
@@ -751,6 +751,10 @@ dd {
     align-items: baseline;
     padding: 65px 0;
     margin-bottom: 70px;
+
+    &_single-page {
+      margin-bottom: 0;
+    }
   }
 
   &__currentPoint {
@@ -759,10 +763,15 @@ dd {
     color: $pink;
     padding-left: 9px;
   }
+
+  &_single-page {
+    background-color: #f8f3f4;
+  }
 }
 
 .breadcrumb {
   align-items: baseline;
+  margin-bottom: 0;
   &__link {
     font: 300 14px/20px "Lato";
     text-transform: uppercase;
@@ -1084,4 +1093,235 @@ dd {
     box-shadow: none;
     outline: 0;
   }
+}
+
+.carousel-item__photo {
+  height: 724px;
+  width: 100%;
+}
+
+.carousel-inner__photo {
+  width: 597px;
+  margin: 0 auto;
+}
+
+/*------------Single Page------*/
+
+.illustrations-slider {
+  background-color: #f7f7f7;
+  min-height: 777px;
+
+  &__arrow {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__button {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+    top: 365px;
+  }
+}
+
+.product-buying {
+  &__body {
+  }
+
+  &__collection {
+  }
+
+  &__horizontal-line {
+    &_pink {
+    }
+  }
+
+  &__name {
+  }
+}
+
+.product-buying {
+  position: relative;
+  border: 1px solid #eaeaea;
+  background-color: #fff;
+  margin: -86px auto 137px;
+  &__body {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__collection {
+    margin-top: 73px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f16d7f;
+    margin-bottom: 15px;
+  }
+
+  &__horizontal-line {
+    width: 147px;
+    height: 1px;
+    background-color: #ef5b70;
+    border: 1px solid #eaeaea;
+    &_pink {
+      width: 63px;
+      height: 3px;
+      background-color: #ef5b70;
+      position: absolute;
+      top: 111.5px;
+    }
+
+    &_width2 {
+      margin-top: 47px;
+      margin-bottom: 63px;
+      width: 100%;
+    }
+  }
+
+  &__name {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin-top: 18px;
+  }
+
+  &__description {
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+    margin-top: 67px;
+  }
+
+  &__price {
+    margin-top: 37px;
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ef5b70;
+  }
+}
+.item-parameters {
+  margin-top: 27px;
+  display: flex;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #b9b9b9;
+  &__material {
+    margin-right: 44px;
+  }
+
+  &__value {
+    color: #2f2f2f;
+  }
+}
+
+.ordering {
+  display: flex;
+  width: 537px;
+  flex-direction: column;
+  align-items: center;
+  &__settings {
+    display: flex;
+    margin-bottom: 28px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__choose {
+    margin-right: 53px;
+  }
+
+  &__parameter {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin-bottom: 16px;
+  }
+
+  &__choise {
+    display: block;
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 0;
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #bcbcbc;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+
+    &_select {
+      background-image: url(../img/carret/angle-down-solid.svg);
+    }
+
+    &:focus {
+      border-color: #eaeaea;
+      box-shadow: none;
+    }
+  }
+
+  &__finish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    background-color: #ef5b70;
+    border: 1px solid #fff;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 137px;
+
+    &:hover {
+      background-color: #fff;
+      border: 1px solid #ef5b70;
+      color: #ef5b70;
+      transition: 0.2s;
+    }
+  }
+}
+
+.fa-cart-plus {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.same-products {
+  &__title {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.itemsCardBox__single-page {
+  margin-bottom: 73px;
 }
