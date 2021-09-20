@@ -359,8 +359,8 @@
         </li>
       </ul>
     </nav>
-    <section class="navAdress">
-      <div class="navAdress__body myContainer">
+    <section class="navAdress navAdress_single-page">
+      <div class="navAdress__body navAdress__body_single-page myContainer">
         <h2 class="navAdress__currentPoint">New Arrivals</h2>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -383,35 +383,185 @@
         class="carousel slide"
         data-bs-ride="carousel"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/single_page/ill01.png" class="d-block" alt="..." />
+        <div class="carousel-inner carousel-inner__photo">
+          <div class="carousel-item active carousel-item__photo">
+            <img class="d-block" src="img/single_page/ill01.png" alt="" />
           </div>
-          <div class="carousel-item">
-            <img src="img/single_page/ill01.png" class="d-block" alt="..." />
+          <div class="carousel-item carousel-item__photo">
+            <img class="d-block" src="img/single_page/ill01.png" alt="" />
           </div>
-          <div class="carousel-item">
-            <img src="img/single_page/ill01.png" class="d-block" alt="..." />
+          <div class="carousel-item carousel-item__photo">
+            <img class="d-block" src="img/single_page/ill01.png" alt="" />
           </div>
         </div>
         <button
-          class="carousel-control-prev"
+          class="carousel-control-prev illustrations-slider__button"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <i
+            class="fa fa-angle-left illustrations-slider__arrow"
+            aria-hidden="true"
+          ></i>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
-          class="carousel-control-next"
+          class="carousel-control-next illustrations-slider__button"
           type="button"
           data-bs-target="#carouselExampleControls"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <i
+            class="fa fa-angle-right illustrations-slider__arrow"
+            aria-hidden="true"
+          ></i>
           <span class="visually-hidden">Next</span>
         </button>
+      </div>
+    </section>
+    <section class="product-buying myContainer">
+      <div class="product-buying__body">
+        <p class="product-buying__collection">WOMEN COLLECTION</p>
+        <div class="product-buying__horizontal-line"></div>
+        <div class="product-buying__horizontal-line_pink"></div>
+        <p class="product-buying__name">Moschino Cheap And Chic</p>
+        <p class="product-buying__description">
+          Compellingly actualize fully researched processes before proactive
+          outsourcing. Progressively syndicate collaborative architectures
+          before cutting-edge services. Completely visualize parallel core
+          competencies rather than exceptional portals.
+        </p>
+        <div class="item-parameters">
+          <div class="item-parameters__material">
+            <span class="item-parameters__feature">MATERIAL:</span>
+            <span class="item-parameters__value">COTTON</span>
+          </div>
+          <div class="item-parameters__designer">
+            <span class="item-parameters__feature">DESIGNER:</span>
+            <span class="item-parameters__value">BINBURHAN</span>
+          </div>
+        </div>
+        <p class="product-buying__price">$561</p>
+        <div
+          class="
+            product-buying__horizontal-line
+            product-buying__horizontal-line_width2
+          "
+        ></div>
+        <form action="#" class="ordering">
+          <div class="ordering__settings">
+            <div class="ordering__choose">
+              <label for="color" class="ordering__parameter"
+                >CHOOSE COLOR</label
+              >
+              <select
+                name="color"
+                id="color"
+                class="form-select ordering__choise ordering__choise_select"
+              >
+                <option value="1">Red</option>
+                <option value="2">Black</option>
+                <option value="3">White</option>
+              </select>
+            </div>
+            <div class="ordering__choose">
+              <label for="size" class="ordering__parameter">CHOOSE SIZE</label>
+              <select
+                name="size"
+                id="size"
+                class="form-select ordering__choise ordering__choise_select"
+              >
+                <option value="1">XXL</option>
+                <option value="2">XL</option>
+                <option value="3">L</option>
+              </select>
+            </div>
+            <div class="ordering__choose">
+              <label for="quantity" class="ordering__parameter">QUANTITY</label>
+              <input
+                type="text"
+                class="ordering__choise"
+                name="quantity"
+                id="quantity"
+                placeholder="2"
+              />
+            </div>
+          </div>
+          <button type="submit" class="button ordering__finish">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            Add to Cart
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="same-products myContainer">
+      <h3 class="same-products__title">you may like also</h3>
+      <div class="itemsCardBox itemsCardBox__single-page">
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product01.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product02.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product03.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product04.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="subscribe">
@@ -421,8 +571,8 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div class="carousel-inner carousel-inner__author">
+            <div class="carousel-item carousel-item__author active">
               <div class="creator">
                 <img src="img/subscribe/01.png" alt="photo of creator" />
                 <div class="creator__desc">
@@ -441,7 +591,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-item__author">
               <div class="creator">
                 <img src="img/subscribe/01.png" alt="photo of creator" />
                 <div class="creator__desc">
@@ -460,7 +610,7 @@
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item carousel-item__author">
               <div class="creator">
                 <img src="img/subscribe/01.png" alt="photo of creator" />
                 <div class="creator__desc">
@@ -480,7 +630,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-indicators d-block">
+          <div class="carousel-indicators carousel-indicators__author d-block">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
