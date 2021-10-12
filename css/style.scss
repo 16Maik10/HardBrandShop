@@ -1433,11 +1433,113 @@ input::-webkit-inner-spin-button {
     color: #4a4a4a;
     background-color: #fff;
     border: 1px solid #eaeaea;
-    padding: 20px 40px;
+
+    &_big {
+      padding: 20px 40px;
+    }
+
+    &_lil {
+      padding: 12px 15px;
+      margin-top: 25px;
+    }
 
     &:hover {
       background-color: #e6e6e6;
       transition: 0.2s;
+    }
+  }
+}
+
+.finish {
+  display: flex;
+  justify-content: space-between;
+
+  &-form {
+    width: 355px;
+
+    &__title {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222;
+    }
+
+    &__subtitle {
+      font-family: Lato;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #000000;
+      &_coupon {
+        margin: 28px 0 5px;
+      }
+
+      &_subtotal {
+        margin: 40px 0 12px;
+      }
+    }
+
+    &__area {
+      font-family: Lato;
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #b1b1b1;
+      border: 1px solid #eaeaea;
+      padding: 9px 16px;
+      width: 100%;
+      margin-top: 20px;
+      &::-webkit-input-placeholder {
+        color: #b1b1b1;
+      }
+      &_country {
+        background-image: url(../img/carret/caret-down-solid.svg);
+      }
+    }
+  }
+  &-proceed {
+    text-align: right;
+    &__subtotal {
+      font-family: Lato;
+      font-size: 11px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #4a4a4a;
+      margin-left: 15px;
+    }
+    &__total {
+      color: #f16d7f;
+      margin-left: 15px;
+    }
+
+    &__horizontal-line {
+      width: 275px;
+      height: 1px;
+      background-color: #e2e2e2;
+      margin: 22px 0 17px;
+    }
+
+    &__buy {
+      box-sizing: border-box;
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: $pink;
+      border: 1px solid #fff;
+      padding: 15px 40px;
+
+      &:hover {
+        background-color: #fff;
+        color: $pink;
+        border: 1px solid $pink;
+        transition: 0.2s;
+      }
     }
   }
 }
