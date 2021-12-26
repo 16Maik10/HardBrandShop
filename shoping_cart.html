@@ -79,7 +79,7 @@
         <li class="navlinks__item">
           <a href="index.html" class="navlinks__link myLink">Home</a>
         </li>
-        <li class="navlinks__item">
+        <li class="navlinks__item navlinks__item_active">
           <a href="product.html" class="navlinks__link navlinks__link myLink"
             >Men</a
           >
@@ -500,66 +500,61 @@
         </div>
       </div>
       <div class="Cart-button-group">
-        <button
-          class="Cart-button-group__button Cart-button-group__button_big button"
-        >
+        <button class="cart-button Cart-button-group__button button">
           CLEAR SHOPPING CART
         </button>
-        <button
-          class="Cart-button-group__button Cart-button-group__button_big button"
-        >
+        <button class="cart-button Cart-button-group__button button">
           CONTINUE SHOPPING
         </button>
       </div>
     </section>
     <section class="finish myContainer">
       <form action="#" class="finish-form">
-        <h3 class="finish-form__title">Shipping Adress</h3>
+        <p class="finish-form__name">Shipping Adress</p>
         <select
-          class="form-select finish-form__area finish-form__area_country"
+          class="form-select finish-form__country"
           aria-label="Default select example"
         >
           <option value="Russia">Russia</option>
           <option selected value="Bang">Bangladesh</option>
           <option value="USA">U.S.A.</option>
         </select>
-        <input type="text" placeholder="State" class="finish-form__area" />
+        <input type="text" class="finish-form__textInput" placeholder="State" />
         <input
           type="text"
+          class="finish-form__textInput"
           placeholder="Postcode / Zip"
-          class="finish-form__area"
         />
-        <button
-          type="submit"
-          class="Cart-button-group__button Cart-button-group__button_lil"
-        >
-          GET A QUOTE
+        <button type="submit" class="cart-button finish-form__button">
+          get a quote
         </button>
       </form>
       <form action="#" class="finish-form">
-        <h3 class="finish-form__title">coupon discount</h3>
-        <h4 class="finish-form__subtitle finish-form__subtitle_coupon">
+        <p class="finish-form__name">coupon discount</p>
+        <p class="finish-form__description">
           Enter your coupon code if you have one
-        </h4>
-        <input type="text" placeholder="State" class="finish-form__area" />
-
-        <button
-          type="submit"
-          class="Cart-button-group__button Cart-button-group__button_lil"
-        >
+        </p>
+        <input type="text" class="finish-form__textInput" placeholder="State" />
+        <button type="submit" class="cart-button finish-form__button">
           Apply coupon
         </button>
       </form>
-      <div class="finish-proceed">
-        <h4 class="finish-form__subtitle finish-form__subtitle_subtotal">
-          SUB TOTAL <span class="finish-proceed__subtotal">900$</span>
-        </h4>
-        <h3 class="finish-form__title">
-          GRAND TOTAL <span class="finish-proceed__total">900$</span>
-        </h3>
-        <div class="finish-proceed__horizontal-line"></div>
-        <button class="finish-proceed__buy button">proceed to checkout</button>
-      </div>
+      <form action="#" class="finish-form finish-form_total">
+        <div class="finish-form__total">
+          <p class="finish-form__subTotal">SUB TOTAL</p>
+          <p class="finish-form__subTotal finish-form__subTotal_sum">$900</p>
+        </div>
+        <div class="finish-form__total finish-form__total_grand">
+          <p class="finish-form__grandTotal">grand total</p>
+          <p class="finish-form__grandTotal finish-form__grandTotal_sum">
+            $900
+          </p>
+        </div>
+        <div class="finish-form__horizontal-line"></div>
+        <button type="submit" class="finish-form__final-button">
+          proceed to checkout
+        </button>
+      </form>
     </section>
     <section class="subscribe">
       <div class="subscribe__body myContainer">
