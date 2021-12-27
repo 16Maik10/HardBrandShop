@@ -761,7 +761,6 @@ dd {
     font: 900 24px/20px "Lato";
     text-transform: uppercase;
     color: $pink;
-    padding-left: 9px;
   }
 
   &_single-page {
@@ -835,7 +834,7 @@ dd {
   flex-basis: 21.5%;
 }
 
-.accordion {
+.accordion_product {
   &-item {
     border: 0;
     border-bottom: 1px solid #ebebeb;
@@ -1431,6 +1430,12 @@ input::-webkit-inner-spin-button {
     background-color: #e6e6e6;
     transition: 0.2s;
   }
+
+  &_checkout {
+    padding: 14px 53px;
+    font-size: 14px;
+    margin: 33px 0 45px;
+  }
 }
 
 .Cart-button-group {
@@ -1585,5 +1590,129 @@ input::-webkit-inner-spin-button {
         color: #f16d7f;
       }
     }
+  }
+}
+
+//--------------- Checkout.html -------------------//
+
+.checkout {
+  margin-bottom: 93px;
+}
+
+.accordion {
+  &-flush > &-item_checkout:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  &-body_checkout {
+    padding: 0;
+  }
+
+  &-button_checkout {
+    padding: 25px 0;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #222;
+
+    &[aria-expanded="true"] {
+      background-color: #fff;
+      color: #222;
+      box-shadow: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+      z-index: 0;
+    }
+
+    &::after {
+      content: none;
+    }
+
+    &::before {
+      margin-right: 10px;
+    }
+
+    &01::before {
+      content: "01.";
+    }
+
+    &02::before {
+      content: "02.";
+    }
+
+    &03::before {
+      content: "03.";
+    }
+
+    &04::before {
+      content: "04.";
+    }
+
+    &05::before {
+      content: "05.";
+    }
+
+    &06::before {
+      content: "06.";
+    }
+  }
+}
+
+.shipping-adress {
+  &__guest-form {
+    padding: 10px 0 35px 35px;
+  }
+
+  &__main-text {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+
+    &_bottom-part {
+      margin-top: 35px;
+    }
+  }
+
+  &__sub-text {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+    margin: 15px 0 35px;
+
+    &_list {
+      margin: 0 0 10px;
+      padding-left: 15px;
+      background: url(../img/carret/angle-double-right-solid.svg) no-repeat
+        center left/ 10px;
+    }
+  }
+
+  &__input-block {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__status-label {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    padding-left: 15px;
+  }
+
+  &__advantages {
+    list-style-type: none;
+    list-style-position: inside;
   }
 }
