@@ -1663,7 +1663,11 @@ input::-webkit-inner-spin-button {
 }
 
 .shipping-adress {
-  &__guest-form {
+  display: flex;
+  padding-right: 166px;
+  justify-content: space-between;
+
+  &__form {
     padding: 10px 0 35px 35px;
   }
 
@@ -1694,6 +1698,10 @@ input::-webkit-inner-spin-button {
       background: url(../img/carret/angle-double-right-solid.svg) no-repeat
         center left/ 10px;
     }
+
+    &_login {
+      margin-bottom: 27px;
+    }
   }
 
   &__input-block {
@@ -1714,5 +1722,55 @@ input::-webkit-inner-spin-button {
   &__advantages {
     list-style-type: none;
     list-style-position: inside;
+  }
+
+  &__input {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    width: 380px;
+    height: 45px;
+    padding: 0 5px;
+    margin: 16px 0 23px;
+
+    &-label {
+      font-family: Lato;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    &-reqSign {
+      font-family: Lato;
+      font-size: 17px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #ff0d0d;
+      vertical-align: middle;
+      padding-left: 2px;
+    }
+
+    &-warning {
+      font-family: Lato;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #ff0d0d;
+    }
+  }
+
+  &__forgotPassword {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #222222;
+    margin-left: 32px;
+
+    &:hover {
+      //Do some animation-effect
+    }
   }
 }

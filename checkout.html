@@ -408,7 +408,7 @@
           >
             <div class="accordion-body accordion-body_checkout">
               <div class="shipping-adress">
-                <form action="#" class="shipping-adress__guest-form">
+                <form action="#" class="shipping-adress__form">
                   <p class="shipping-adress__main-text">
                     Check as a guest or register
                   </p>
@@ -421,6 +421,7 @@
                       name="status"
                       id="statusChoise1"
                       class="shipping-adress__status"
+                      required
                     />
                     <label
                       for="statusChoise1"
@@ -474,6 +475,50 @@
                   >
                     Continue
                   </button>
+                </form>
+                <form action="#" class="shipping-adress__form">
+                  <p class="shipping-adress__main-text">Already registred?</p>
+                  <p
+                    class="
+                      shipping-adress__sub-text shipping-adress__sub-text_login
+                    "
+                  >
+                    Please log in below
+                  </p>
+                  <label for="login" class="shipping-adress__input-label"
+                    >EMAIL ADDRESS<span class="shipping-adress__input-reqSign"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="email"
+                    id="login"
+                    required
+                    class="shipping-adress__input"
+                  />
+                  <label for="password" class="shipping-adress__input-label"
+                    >PASSWORD<span class="shipping-adress__input-reqSign"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    required
+                    class="shipping-adress__input"
+                  />
+                  <p class="shipping-adress__input-warning">
+                    * Required Fileds
+                  </p>
+                  <button
+                    type="submit"
+                    class="cart-button cart-button_checkout"
+                  >
+                    LOG IN
+                  </button>
+                  <a href="#" class="shipping-adress__forgotPassword"
+                    >Forgot Password ?</a
+                  >
                 </form>
               </div>
             </div>
