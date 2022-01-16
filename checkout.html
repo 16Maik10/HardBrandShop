@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>Checkout</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -359,8 +359,8 @@
         </li>
       </ul>
     </nav>
-    <section class="navAdress">
-      <div class="navAdress__body myContainer">
+    <section class="navAdress navAdress_single-page">
+      <div class="navAdress__body navAdress__body_single-page myContainer">
         <h2 class="navAdress__currentPoint">New Arrivals</h2>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -377,438 +377,253 @@
         </nav>
       </div>
     </section>
-    <section class="catalog">
-      <div class="catalog__body myContainer">
-        <aside class="categories">
-          <div
-            class="accordion accordion_product"
-            id="accordionPanelsStayOpenExample"
+    <section class="checkout myContainer">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item accordion-item_checkout">
+          <h2
+            class="accordion-header accordion-header_checkout"
+            id="flush-headingOne"
           >
-            <div class="accordion-item accordion_product-item">
-              <h2
-                class="accordion-header accordion_product-header"
-                id="panelsStayOpen-headingOne"
-              >
-                <button
-                  class="accordion-button accordion_product-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Category
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne"
-              >
-                <div class="accordion-body">
-                  <a href="#" class="browse__link myLink">Accessories</a
-                  ><a href="#" class="browse__link myLink">Bags</a
-                  ><a href="#" class="browse__link myLink">Denim</a
-                  ><a href="#" class="browse__link myLink"
-                    >Hoodies & Sweatshirts</a
-                  ><a href="#" class="browse__link myLink">Jackets/Coats</a
-                  ><a href="#" class="browse__link myLink">Pants</a
-                  ><a href="#" class="browse__link myLink">Polos</a
-                  ><a href="#" class="browse__link myLink">Shirts</a
-                  ><a href="#" class="browse__link myLink">Shoes</a>
-                  <a href="#" class="browse__link myLink">Shorts</a>
-                  <a href="#" class="browse__link myLink">Sweaters & Knits</a>
-                  <a href="#" class="browse__link myLink">T-Shirts</a>
-                  <a href="#" class="browse__link myLink">Tanks</a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item accordion_product-item">
-              <h2
-                class="accordion-header accordion_product-header"
-                id="panelsStayOpen-headingTwo"
-              >
-                <button
-                  class="accordion-button accordion_product-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  BRAND
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo"
-              >
-                <div class="accordion-body">
-                  <a href="#" class="browse__link myLink">Accessories</a
-                  ><a href="#" class="browse__link myLink">Bags</a
-                  ><a href="#" class="browse__link myLink">Denim</a
-                  ><a href="#" class="browse__link myLink"
-                    >Hoodies & Sweatshirts</a
-                  ><a href="#" class="browse__link myLink">Jackets/Coats</a
-                  ><a href="#" class="browse__link myLink">Pants</a
-                  ><a href="#" class="browse__link myLink">Polos</a
-                  ><a href="#" class="browse__link myLink">Shirts</a
-                  ><a href="#" class="browse__link myLink">Shoes</a>
-                  <a href="#" class="browse__link myLink">Shorts</a>
-                  <a href="#" class="browse__link myLink">Sweaters & Knits</a>
-                  <a href="#" class="browse__link myLink">T-Shirts</a>
-                  <a href="#" class="browse__link myLink">Tanks</a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item accordion_product-item">
-              <h2
-                class="accordion-header accordion_product-header"
-                id="panelsStayOpen-headingThree"
-              >
-                <button
-                  class="accordion-button accordion_product-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  dESIGNER
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
-              >
-                <div class="accordion-body">
-                  <a href="#" class="browse__link myLink">Accessories</a
-                  ><a href="#" class="browse__link myLink">Bags</a
-                  ><a href="#" class="browse__link myLink">Denim</a
-                  ><a href="#" class="browse__link myLink"
-                    >Hoodies & Sweatshirts</a
-                  ><a href="#" class="browse__link myLink">Jackets/Coats</a
-                  ><a href="#" class="browse__link myLink">Pants</a
-                  ><a href="#" class="browse__link myLink">Polos</a
-                  ><a href="#" class="browse__link myLink">Shirts</a
-                  ><a href="#" class="browse__link myLink">Shoes</a>
-                  <a href="#" class="browse__link myLink">Shorts</a>
-                  <a href="#" class="browse__link myLink">Sweaters & Knits</a>
-                  <a href="#" class="browse__link myLink">T-Shirts</a>
-                  <a href="#" class="browse__link myLink">Tanks</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
-        <section class="goods">
-          <div class="filters">
-            <div class="trends">
-              <h4 class="filtersTitle">Trending now</h4>
-              <div class="trends__linksGroup">
-                <a href="#" class="trends__link myLink">Bohemian</a>
-                <a href="#" class="trends__link myLink">Floral</a>
-                <a href="#" class="trends__link trends__link_lastInRow myLink"
-                  >Lace</a
-                >
-                <a href="#" class="trends__link myLink">Floral</a>
-                <a href="#" class="trends__link myLink">Lace</a>
-                <a href="#" class="trends__link trends__link_lastInRow myLink"
-                  >Bohemian</a
-                >
-              </div>
-            </div>
-            <div class="size">
-              <h4 class="filtersTitle">Size</h4>
-              <form action="#" class="size__checkGroup">
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xxs" />
-                  <label for="xxs" class="size__label">xxs</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xs" />
-                  <label for="xs" class="size__label">xs</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="s" />
-                  <label for="s" class="size__label">s</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="m" />
-                  <label for="m" class="size__label">m</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="l" />
-                  <label for="l" class="size__label">l</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xl" />
-                  <label for="xl" class="size__label">xl</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xxl" />
-                  <label for="xxl" class="size__label">xxl</label>
-                </div>
-                <div class="size__variant size__variant_hidden">
-                  <input type="checkbox" class="size__input" id="xxxl" />
-                  <label for="xxxl" class="size__label">xxxl</label>
-                </div>
-              </form>
-            </div>
-            <div class="price">
-              <h4 class="filtersTitle">Price</h4>
-              <div class="price__range-slider" id="range-slider"></div>
-              <div class="price__values">
-                <p class="price__value" id="price-value0"></p>
-                <p class="price__value" id="price-value1"></p>
+            <button
+              class="accordion-button accordion-button_checkout accordion-button_checkout01 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              Shipping Adress
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body accordion-body_checkout">
+              <div class="shipping-adress">
+                <form action="#" class="shipping-adress__form">
+                  <p class="shipping-adress__main-text">
+                    Check as a guest or register
+                  </p>
+                  <p class="shipping-adress__sub-text">
+                    Register with us for future convenience
+                  </p>
+                  <div class="shipping-adress__input-block">
+                    <input
+                      type="radio"
+                      name="status"
+                      id="statusChoise1"
+                      class="shipping-adress__status"
+                      required
+                    />
+                    <label
+                      for="statusChoise1"
+                      class="shipping-adress__status-label"
+                      >checkout as guest</label
+                    >
+                  </div>
+                  <div class="shipping-adress__input-block">
+                    <input
+                      type="radio"
+                      name="status"
+                      id="statusChoise2"
+                      class="shipping-adress__status"
+                    />
+                    <label
+                      for="statusChoise2"
+                      class="shipping-adress__status-label"
+                      >register</label
+                    >
+                  </div>
+                  <p
+                    class="shipping-adress__main-text shipping-adress__main-text_bottom-part"
+                  >
+                    register and save time!
+                  </p>
+                  <p class="shipping-adress__sub-text">
+                    Register with us for future convenience
+                  </p>
+                  <ul class="shipping-adress__advantages">
+                    <li
+                      class="shipping-adress__sub-text shipping-adress__sub-text_list"
+                    >
+                      Fast and easy checkout
+                    </li>
+                    <li
+                      class="shipping-adress__sub-text shipping-adress__sub-text_list"
+                    >
+                      Easy access to your order history and status
+                    </li>
+                  </ul>
+                  <button
+                    type="submit"
+                    class="cart-button cart-button_checkout"
+                  >
+                    Continue
+                  </button>
+                </form>
+                <form action="#" class="shipping-adress__form">
+                  <p class="shipping-adress__main-text">Already registred?</p>
+                  <p
+                    class="shipping-adress__sub-text shipping-adress__sub-text_login"
+                  >
+                    Please log in below
+                  </p>
+                  <label for="login" class="shipping-adress__input-label"
+                    >EMAIL ADDRESS<span class="shipping-adress__input-reqSign"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="email"
+                    id="login"
+                    required
+                    class="shipping-adress__input"
+                  />
+                  <label for="password" class="shipping-adress__input-label"
+                    >PASSWORD<span class="shipping-adress__input-reqSign"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    type="password"
+                    id="password"
+                    required
+                    minlength="8"
+                    class="shipping-adress__input"
+                  />
+                  <p class="shipping-adress__input-warning">
+                    * Required Fileds
+                  </p>
+                  <button
+                    type="submit"
+                    class="cart-button cart-button_checkout"
+                  >
+                    LOG IN
+                  </button>
+                  <a href="#" class="shipping-adress__forgotPassword"
+                    >Forgot Password ?</a
+                  >
+                </form>
               </div>
             </div>
           </div>
-          <div class="pageSettings">
-            <form action="#" class="buttonsGroup">
-              <div class="buttonsGroup__name">Sort By</div>
-              <select
-                class="form-select buttonsGroup__select"
-                aria-label="Default select example"
-              >
-                <option selected>Name</option>
-                <option value="1">Name</option>
-                <option value="2">Name</option>
-              </select>
-            </form>
-            <form action="#" class="buttonsGroup">
-              <div class="buttonsGroup__name">Show</div>
-              <select
-                class="form-select buttonsGroup__select"
-                aria-label="Default select example"
-              >
-                <option selected>09</option>
-                <option value="8">08</option>
-                <option value="16">16</option>
-              </select>
-            </form>
+        </div>
+        <div class="accordion-item accordion-item_checkout">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button accordion-button_checkout accordion-button_checkout02 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              BILLING INFORMATION
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body"></div>
           </div>
-          <div class="itemsCardBox">
-            <div class="productCard">
-              <a class="product myLink" href="single_page.html">
-                <img
-                  src="img/product/product01.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="single_page.html">
-                <img
-                  src="img/product/product02.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="single_page.html" class="addBox__button myLink">
-                  Add to cart
-                </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product03.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product04.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product05.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product06.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product07.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product08.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product04.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
+        </div>
+        <div class="accordion-item accordion-item_checkout">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button accordion-button_checkout accordion-button_checkout03 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              SHIPPING INFORMATION
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body"></div>
           </div>
-          <div class="pagePagination">
-            <nav aria-label="...">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <span class="page-link"
-                    ><i class="fa fa-angle-left"></i
-                  ></span>
-                </li>
-                <li class="page-item" aria-current="page">
-                  <a class="page-link active" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">4</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">5</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">6.....20</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#"
-                    ><i class="fa fa-angle-right"></i
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-            <a href="#" class="pagePagination__button myLink"> View All </a>
+        </div>
+        <div class="accordion-item accordion-item_checkout">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button
+              class="accordion-button accordion-button_checkout accordion-button_checkout04 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour"
+              aria-expanded="false"
+              aria-controls="flush-collapseFour"
+            >
+              SHIPPING METHOD
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body"></div>
           </div>
-        </section>
-      </div>
-    </section>
-    <section class="features features_horizontal">
-      <div class="shop-features">
-        <div class="shop-features__body">
-          <div class="features-box">
-            <div class="features-box__item">
-              <img src="img/feature/feature01.png" alt="delivery icon" />
-              <h3 class="features-box__title">Free Delivery</h3>
-              <p class="features-box__text">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </div>
-            <div class="features-box__item">
-              <img src="img/feature/feature02.png" alt="discount icon" />
-              <h3 class="features-box__title">Sales & discounts</h3>
-              <p class="features-box__text">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </div>
-            <div class="features-box__item">
-              <img src="img/feature/feature03.png" alt="quality icon" />
-              <h3 class="features-box__title">Quality assurance</h3>
-              <p class="features-box__text">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
-            </div>
+        </div>
+        <div class="accordion-item accordion-item_checkout">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button
+              class="accordion-button accordion-button_checkout accordion-button_checkout05 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive"
+              aria-expanded="false"
+              aria-controls="flush-collapseFive"
+            >
+              PAYMENT METHOD
+            </button>
+          </h2>
+          <div
+            id="flush-collapseFive"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body"></div>
+          </div>
+        </div>
+        <div class="accordion-item accordion-item_checkout">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button
+              class="accordion-button accordion-button_checkout accordion-button_checkout06 collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix"
+              aria-expanded="false"
+              aria-controls="flush-collapseSix"
+            >
+              ORDER REVIEW
+            </button>
+          </h2>
+          <div
+            id="flush-collapseSix"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body"></div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="subscribe">
       <div class="subscribe__body myContainer">
         <div
@@ -998,7 +813,5 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <script src="slider/nouislider.min.js"></script>
-    <script src="slider/slider.js"></script>
   </body>
 </html>

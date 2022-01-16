@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
+    <title>Single Page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -79,7 +79,7 @@
         <li class="navlinks__item">
           <a href="index.html" class="navlinks__link myLink">Home</a>
         </li>
-        <li class="navlinks__item navlinks__item_active">
+        <li class="navlinks__item">
           <a href="product.html" class="navlinks__link navlinks__link myLink"
             >Men</a
           >
@@ -359,8 +359,8 @@
         </li>
       </ul>
     </nav>
-    <section class="navAdress">
-      <div class="navAdress__body myContainer">
+    <section class="navAdress navAdress_single-page">
+      <div class="navAdress__body navAdress__body_single-page myContainer">
         <h2 class="navAdress__currentPoint">New Arrivals</h2>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -377,434 +377,186 @@
         </nav>
       </div>
     </section>
-    <section class="catalog">
-      <div class="catalog__body myContainer">
-        <aside class="categories">
-          <div
-            class="accordion accordion_product"
-            id="accordionPanelsStayOpenExample"
-          >
-            <div class="accordion-item accordion_product-item">
-              <h2
-                class="accordion-header accordion_product-header"
-                id="panelsStayOpen-headingOne"
-              >
-                <button
-                  class="accordion-button accordion_product-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Category
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne"
-              >
-                <div class="accordion-body">
-                  <a href="#" class="browse__link myLink">Accessories</a
-                  ><a href="#" class="browse__link myLink">Bags</a
-                  ><a href="#" class="browse__link myLink">Denim</a
-                  ><a href="#" class="browse__link myLink"
-                    >Hoodies & Sweatshirts</a
-                  ><a href="#" class="browse__link myLink">Jackets/Coats</a
-                  ><a href="#" class="browse__link myLink">Pants</a
-                  ><a href="#" class="browse__link myLink">Polos</a
-                  ><a href="#" class="browse__link myLink">Shirts</a
-                  ><a href="#" class="browse__link myLink">Shoes</a>
-                  <a href="#" class="browse__link myLink">Shorts</a>
-                  <a href="#" class="browse__link myLink">Sweaters & Knits</a>
-                  <a href="#" class="browse__link myLink">T-Shirts</a>
-                  <a href="#" class="browse__link myLink">Tanks</a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item accordion_product-item">
-              <h2
-                class="accordion-header accordion_product-header"
-                id="panelsStayOpen-headingTwo"
-              >
-                <button
-                  class="accordion-button accordion_product-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  BRAND
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo"
-              >
-                <div class="accordion-body">
-                  <a href="#" class="browse__link myLink">Accessories</a
-                  ><a href="#" class="browse__link myLink">Bags</a
-                  ><a href="#" class="browse__link myLink">Denim</a
-                  ><a href="#" class="browse__link myLink"
-                    >Hoodies & Sweatshirts</a
-                  ><a href="#" class="browse__link myLink">Jackets/Coats</a
-                  ><a href="#" class="browse__link myLink">Pants</a
-                  ><a href="#" class="browse__link myLink">Polos</a
-                  ><a href="#" class="browse__link myLink">Shirts</a
-                  ><a href="#" class="browse__link myLink">Shoes</a>
-                  <a href="#" class="browse__link myLink">Shorts</a>
-                  <a href="#" class="browse__link myLink">Sweaters & Knits</a>
-                  <a href="#" class="browse__link myLink">T-Shirts</a>
-                  <a href="#" class="browse__link myLink">Tanks</a>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item accordion_product-item">
-              <h2
-                class="accordion-header accordion_product-header"
-                id="panelsStayOpen-headingThree"
-              >
-                <button
-                  class="accordion-button accordion_product-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  dESIGNER
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
-              >
-                <div class="accordion-body">
-                  <a href="#" class="browse__link myLink">Accessories</a
-                  ><a href="#" class="browse__link myLink">Bags</a
-                  ><a href="#" class="browse__link myLink">Denim</a
-                  ><a href="#" class="browse__link myLink"
-                    >Hoodies & Sweatshirts</a
-                  ><a href="#" class="browse__link myLink">Jackets/Coats</a
-                  ><a href="#" class="browse__link myLink">Pants</a
-                  ><a href="#" class="browse__link myLink">Polos</a
-                  ><a href="#" class="browse__link myLink">Shirts</a
-                  ><a href="#" class="browse__link myLink">Shoes</a>
-                  <a href="#" class="browse__link myLink">Shorts</a>
-                  <a href="#" class="browse__link myLink">Sweaters & Knits</a>
-                  <a href="#" class="browse__link myLink">T-Shirts</a>
-                  <a href="#" class="browse__link myLink">Tanks</a>
-                </div>
-              </div>
-            </div>
+    <section class="illustrations-slider">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner carousel-inner__photo">
+          <div class="carousel-item active carousel-item__photo">
+            <img class="d-block" src="img/single_page/ill01.png" alt="" />
           </div>
-        </aside>
-        <section class="goods">
-          <div class="filters">
-            <div class="trends">
-              <h4 class="filtersTitle">Trending now</h4>
-              <div class="trends__linksGroup">
-                <a href="#" class="trends__link myLink">Bohemian</a>
-                <a href="#" class="trends__link myLink">Floral</a>
-                <a href="#" class="trends__link trends__link_lastInRow myLink"
-                  >Lace</a
-                >
-                <a href="#" class="trends__link myLink">Floral</a>
-                <a href="#" class="trends__link myLink">Lace</a>
-                <a href="#" class="trends__link trends__link_lastInRow myLink"
-                  >Bohemian</a
-                >
-              </div>
-            </div>
-            <div class="size">
-              <h4 class="filtersTitle">Size</h4>
-              <form action="#" class="size__checkGroup">
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xxs" />
-                  <label for="xxs" class="size__label">xxs</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xs" />
-                  <label for="xs" class="size__label">xs</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="s" />
-                  <label for="s" class="size__label">s</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="m" />
-                  <label for="m" class="size__label">m</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="l" />
-                  <label for="l" class="size__label">l</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xl" />
-                  <label for="xl" class="size__label">xl</label>
-                </div>
-                <div class="size__variant">
-                  <input type="checkbox" class="size__input" id="xxl" />
-                  <label for="xxl" class="size__label">xxl</label>
-                </div>
-                <div class="size__variant size__variant_hidden">
-                  <input type="checkbox" class="size__input" id="xxxl" />
-                  <label for="xxxl" class="size__label">xxxl</label>
-                </div>
-              </form>
-            </div>
-            <div class="price">
-              <h4 class="filtersTitle">Price</h4>
-              <div class="price__range-slider" id="range-slider"></div>
-              <div class="price__values">
-                <p class="price__value" id="price-value0"></p>
-                <p class="price__value" id="price-value1"></p>
-              </div>
-            </div>
+          <div class="carousel-item carousel-item__photo">
+            <img class="d-block" src="img/single_page/ill01.png" alt="" />
           </div>
-          <div class="pageSettings">
-            <form action="#" class="buttonsGroup">
-              <div class="buttonsGroup__name">Sort By</div>
-              <select
-                class="form-select buttonsGroup__select"
-                aria-label="Default select example"
-              >
-                <option selected>Name</option>
-                <option value="1">Name</option>
-                <option value="2">Name</option>
-              </select>
-            </form>
-            <form action="#" class="buttonsGroup">
-              <div class="buttonsGroup__name">Show</div>
-              <select
-                class="form-select buttonsGroup__select"
-                aria-label="Default select example"
-              >
-                <option selected>09</option>
-                <option value="8">08</option>
-                <option value="16">16</option>
-              </select>
-            </form>
+          <div class="carousel-item carousel-item__photo">
+            <img class="d-block" src="img/single_page/ill01.png" alt="" />
           </div>
-          <div class="itemsCardBox">
-            <div class="productCard">
-              <a class="product myLink" href="single_page.html">
-                <img
-                  src="img/product/product01.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="single_page.html">
-                <img
-                  src="img/product/product02.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="single_page.html" class="addBox__button myLink">
-                  Add to cart
-                </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product03.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product04.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product05.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product06.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product07.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product08.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-            <div class="productCard">
-              <a class="product myLink" href="#">
-                <img
-                  src="img/product/product04.jpg"
-                  alt="photo"
-                  class="product__photo"
-                />
-                <div class="product__desc">
-                  <h4 class="product__title">Mango People T-shirt</h4>
-                  <p class="product__price">$52.00</p>
-                </div>
-              </a>
-              <div class="addBox">
-                <a href="#" class="addBox__button myLink"> Add to cart </a>
-              </div>
-            </div>
-          </div>
-          <div class="pagePagination">
-            <nav aria-label="...">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <span class="page-link"
-                    ><i class="fa fa-angle-left"></i
-                  ></span>
-                </li>
-                <li class="page-item" aria-current="page">
-                  <a class="page-link active" href="#">1</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">4</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">5</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#">6.....20</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#"
-                    ><i class="fa fa-angle-right"></i
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-            <a href="#" class="pagePagination__button myLink"> View All </a>
-          </div>
-        </section>
+        </div>
+        <button
+          class="carousel-control-prev illustrations-slider__button"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <i
+            class="fa fa-angle-left illustrations-slider__arrow"
+            aria-hidden="true"
+          ></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next illustrations-slider__button"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <i
+            class="fa fa-angle-right illustrations-slider__arrow"
+            aria-hidden="true"
+          ></i>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
-    <section class="features features_horizontal">
-      <div class="shop-features">
-        <div class="shop-features__body">
-          <div class="features-box">
-            <div class="features-box__item">
-              <img src="img/feature/feature01.png" alt="delivery icon" />
-              <h3 class="features-box__title">Free Delivery</h3>
-              <p class="features-box__text">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
+    <section class="product-buying myContainer">
+      <div class="product-buying__body">
+        <p class="product-buying__collection">WOMEN COLLECTION</p>
+        <div class="product-buying__horizontal-line"></div>
+        <div class="product-buying__horizontal-line_pink"></div>
+        <p class="product-buying__name">Moschino Cheap And Chic</p>
+        <p class="product-buying__description">
+          Compellingly actualize fully researched processes before proactive
+          outsourcing. Progressively syndicate collaborative architectures
+          before cutting-edge services. Completely visualize parallel core
+          competencies rather than exceptional portals.
+        </p>
+        <div class="item-parameters">
+          <div class="item-parameters__material">
+            <span class="item-parameters__feature">MATERIAL:</span>
+            <span class="item-parameters__value">COTTON</span>
+          </div>
+          <div class="item-parameters__designer">
+            <span class="item-parameters__feature">DESIGNER:</span>
+            <span class="item-parameters__value">BINBURHAN</span>
+          </div>
+        </div>
+        <p class="product-buying__price">$561</p>
+        <div
+          class="product-buying__horizontal-line product-buying__horizontal-line_width2"
+        ></div>
+        <form action="#" class="ordering">
+          <div class="ordering__settings">
+            <div class="ordering__choose">
+              <label for="color" class="ordering__parameter"
+                >CHOOSE COLOR</label
+              >
+              <select
+                name="color"
+                id="color"
+                class="form-select ordering__choise ordering__choise_select"
+              >
+                <option value="1">Red</option>
+                <option value="2">Black</option>
+                <option value="3">White</option>
+              </select>
             </div>
-            <div class="features-box__item">
-              <img src="img/feature/feature02.png" alt="discount icon" />
-              <h3 class="features-box__title">Sales & discounts</h3>
-              <p class="features-box__text">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
+            <div class="ordering__choose">
+              <label for="size" class="ordering__parameter">CHOOSE SIZE</label>
+              <select
+                name="size"
+                id="size"
+                class="form-select ordering__choise ordering__choise_select"
+              >
+                <option value="1">XXL</option>
+                <option value="2">XL</option>
+                <option value="3">L</option>
+              </select>
             </div>
-            <div class="features-box__item">
-              <img src="img/feature/feature03.png" alt="quality icon" />
-              <h3 class="features-box__title">Quality assurance</h3>
-              <p class="features-box__text">
-                Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.
-              </p>
+            <div class="ordering__choose">
+              <label for="quantity" class="ordering__parameter">QUANTITY</label>
+              <input
+                type="text"
+                class="ordering__choise"
+                name="quantity"
+                id="quantity"
+                placeholder="2"
+              />
             </div>
+          </div>
+          <button type="submit" class="button ordering__finish">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            Add to Cart
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="same-products myContainer">
+      <h3 class="same-products__title">you may like also</h3>
+      <div class="itemsCardBox itemsCardBox__single-page">
+        <div class="productCard productCard_same">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product01.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product02.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product03.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
+          </div>
+        </div>
+        <div class="productCard">
+          <a class="product myLink" href="#">
+            <img
+              src="img/product/product04.jpg"
+              alt="photo"
+              class="product__photo"
+            />
+            <div class="product__desc">
+              <h4 class="product__title">Mango People T-shirt</h4>
+              <p class="product__price">$52.00</p>
+            </div>
+          </a>
+          <div class="addBox">
+            <a href="#" class="addBox__button myLink"> Add to cart </a>
           </div>
         </div>
       </div>
