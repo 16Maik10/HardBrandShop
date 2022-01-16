@@ -98,6 +98,7 @@ dd {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .headerTop__auth:hover {
@@ -398,10 +399,28 @@ dd {
 
 .Column__bigItem_forMen {
   background: url(../img/offers/men.png) no-repeat center/cover;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.Column__bigItem_forMen:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
 .Column__bigItem_forKids {
   background: url(../img/offers/forKids.png) no-repeat center/cover;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.Column__bigItem_forKids:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
 }
 
 .Column__lilItem {
@@ -412,10 +431,28 @@ dd {
 
 .Column__lilItem_accesories {
   background: url(../img/offers/accesories.png) no-repeat center/cover;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.Column__lilItem_accesories:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .Column__lilItem_forWomen {
   background: url(../img/offers/forWomen.png) no-repeat center/cover;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.Column__lilItem_forWomen:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .offerTitle {
