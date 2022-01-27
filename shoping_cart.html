@@ -32,12 +32,9 @@
             </p>
           </a>
           <form action="#" class="search">
-            <details id="browse">
-              <summary class="browse">
-                <span class="browse__name">Browse</span>
-                <span class="fa fa-caret-right"></span>
-              </summary>
-              <div class="browse__down">
+            <div class="browse">
+              <span class="browse__name">Browse</span>
+              <div class="browse__down invisible">
                 <h3 class="browse__subtitle">Women</h3>
                 <a href="#" class="browse__link myLink">Dresses</a
                 ><a href="#" class="browse__link myLink">Tops</a
@@ -56,7 +53,8 @@
                 ><a href="#" class="browse__link myLink">Blazers</a
                 ><a href="#" class="browse__link myLink">Jackets/vests</a>
               </div>
-            </details>
+              <span class="fa fa-caret-right"></span>
+            </div>
             <input
               type="text"
               class="search__que"
@@ -66,7 +64,22 @@
           </form>
         </div>
         <div class="headerTop__right">
-          <a href="shoping_cart.html" class="headerTop__cart button"></a>
+          <a href="#" class="headerTop__cart button"
+            ><div class="headerTop__cartCounter">0</div></a
+          >
+          <div class="cart-menu invisible">
+            <p class="cart-menu__status">В корзине пусто</p>
+            <a
+              class="cart-menu__btn-check featuredItems__button myLink"
+              href="checkout.html"
+              >CHECKOUT</a
+            >
+            <a
+              class="cart-button cart-menu__btn-cart myLink"
+              href="shoping_cart.html"
+              >go to cart</a
+            >
+          </div>
           <a href="checkout.html" class="headerTop__auth button">
             My Account
             <span class="fa fa-caret-down"></span>
@@ -74,15 +87,40 @@
         </div>
       </div>
     </header>
+    <div class="burger-menu">
+      Menu
+      <i class="fa fa-bars burger-menu__bars"></i>
+      <ul class="navlinks navLinks_burger invisible">
+        <li class="navlinks__item">
+          <a href="index.html" class="navlinks__link myLink">Home</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Men</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Women</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Kids</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Accesories</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Featured</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Hot Deals</a>
+        </li>
+      </ul>
+    </div>
     <nav class="navMenu">
       <ul class="navlinks">
         <li class="navlinks__item">
           <a href="index.html" class="navlinks__link myLink">Home</a>
         </li>
-        <li class="navlinks__item navlinks__item_active">
-          <a href="product.html" class="navlinks__link navlinks__link myLink"
-            >Men</a
-          >
+        <li class="navlinks__item navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Men</a>
           <div class="browse__down browse__down_menu">
             <div class="megaMenu__Column">
               <h3 class="browse__subtitle">Women</h3>
@@ -407,8 +445,12 @@
             </p>
           </div>
         </div>
-        <p class="Cart-list__col Cart-list__col_value">$150</p>
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">unite Price</span
+          >$150
+        </p>
         <div class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">Quantity</span>
           <input
             type="number"
             class="Cart-list__quantity"
@@ -417,9 +459,13 @@
             value="2"
           />
         </div>
-        <p class="Cart-list__col Cart-list__col_value">FREE</p>
-        <p class="Cart-list__col Cart-list__col_value">$300</p>
-        <div class="Cart-list__col Cart-list__col_value">
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">shipping</span>FREE
+        </p>
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">Subtotal</span>$300
+        </p>
+        <div class="Cart-list__col Cart-list__col_value Cart-list__col_button">
           <button class="Cart-list__button button">
             <i class="fa fa-times-circle" aria-hidden="true"></i>
           </button>
@@ -444,8 +490,12 @@
             </p>
           </div>
         </div>
-        <p class="Cart-list__col Cart-list__col_value">$150</p>
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">unite Price</span
+          >$150
+        </p>
         <div class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">Quantity</span>
           <input
             type="number"
             class="Cart-list__quantity"
@@ -454,9 +504,13 @@
             value="2"
           />
         </div>
-        <p class="Cart-list__col Cart-list__col_value">FREE</p>
-        <p class="Cart-list__col Cart-list__col_value">$300</p>
-        <div class="Cart-list__col Cart-list__col_value">
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">shipping</span>FREE
+        </p>
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">Subtotal</span>$300
+        </p>
+        <div class="Cart-list__col Cart-list__col_value Cart-list__col_button">
           <button class="Cart-list__button button">
             <i class="fa fa-times-circle" aria-hidden="true"></i>
           </button>
@@ -481,8 +535,12 @@
             </p>
           </div>
         </div>
-        <p class="Cart-list__col Cart-list__col_value">$150</p>
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">unite Price</span
+          >$150
+        </p>
         <div class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">Quantity</span>
           <input
             type="number"
             class="Cart-list__quantity"
@@ -491,9 +549,13 @@
             value="2"
           />
         </div>
-        <p class="Cart-list__col Cart-list__col_value">FREE</p>
-        <p class="Cart-list__col Cart-list__col_value">$300</p>
-        <div class="Cart-list__col Cart-list__col_value">
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">shipping</span>FREE
+        </p>
+        <p class="Cart-list__col Cart-list__col_value">
+          <span class="Cart-list__col Cart-list__col_tablet">Subtotal</span>$300
+        </p>
+        <div class="Cart-list__col Cart-list__col_value Cart-list__col_button">
           <button class="Cart-list__button button">
             <i class="fa fa-times-circle" aria-hidden="true"></i>
           </button>
@@ -669,7 +731,7 @@
     <footer class="footer">
       <section class="footerNavLinks">
         <div class="footerNavLinks__body myContainer">
-          <div class="footerNavLinks__Col footerCol">
+          <div class="footerNavLinks__Col footerNavLinks__Col_text footerCol">
             <a href="index.html" class="logo myLink">
               <img src="img/header/logo.png" alt="logo" class="logo__icon" />
               <p class="logo__title">
@@ -740,6 +802,7 @@
         </div>
       </section>
     </footer>
+    <script src="js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
