@@ -144,6 +144,7 @@ dd {
   border-radius: 5px;
   position: absolute;
   top: 95%;
+  right: 0;
   z-index: 10;
 }
 
@@ -194,6 +195,7 @@ dd {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .search__que {
@@ -208,16 +210,9 @@ dd {
   border: 1px solid #e6e6e6;
 }
 
-#browse[open] > summary.browse > .fa-caret-right {
+.fa-caret-right {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.fa-caret-right {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
 .browse {
@@ -243,6 +238,7 @@ dd {
   background-color: #fff;
   padding: 20px 15px;
   border: 1px solid #e8e8e8;
+  top: 40px;
 }
 
 .browse__down::before {
@@ -2221,7 +2217,7 @@ input::-webkit-inner-spin-button {
   .search__enter {
     max-width: 36px;
   }
-  #browse {
+  .browse {
     min-width: 84px;
   }
   .headerTop__right {
@@ -2229,6 +2225,9 @@ input::-webkit-inner-spin-button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .cart-menu {
+    right: unset;
   }
   .navlinks {
     display: none;
@@ -2255,15 +2254,10 @@ input::-webkit-inner-spin-button {
     position: absolute;
     background-color: #fff;
     z-index: 5;
+    top: 50px;
   }
   .burger-menu {
-    display: block;
     position: relative;
-  }
-  .burger-menu__bars {
-    margin-left: 7px;
-  }
-  .burger-menu > summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2277,6 +2271,9 @@ input::-webkit-inner-spin-button {
             align-items: center;
     font: 700 14px / 26px "Lato";
     color: #222;
+  }
+  .burger-menu__bars {
+    margin-left: 7px;
   }
   .Banner {
     background-position: 70% 50%;
@@ -2589,9 +2586,6 @@ input::-webkit-inner-spin-button {
   }
   .finish-form__country, .finish-form__textInput, .finish-form__button, .finish-form__horizontal-line, .finish-form__final-button {
     width: 100%;
-  }
-  summary {
-    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

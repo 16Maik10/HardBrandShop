@@ -31,12 +31,9 @@
             </p>
           </a>
           <form action="#" class="search">
-            <details id="browse">
-              <summary class="browse">
-                <span class="browse__name">Browse</span>
-                <span class="fa fa-caret-right"></span>
-              </summary>
-              <div class="browse__down">
+            <div class="browse">
+              <span class="browse__name">Browse</span>
+              <div class="browse__down invisible">
                 <h3 class="browse__subtitle">Women</h3>
                 <a href="#" class="browse__link myLink">Dresses</a
                 ><a href="#" class="browse__link myLink">Tops</a
@@ -55,7 +52,8 @@
                 ><a href="#" class="browse__link myLink">Blazers</a
                 ><a href="#" class="browse__link myLink">Jackets/vests</a>
               </div>
-            </details>
+              <span class="fa fa-caret-right"></span>
+            </div>
             <input
               type="text"
               class="search__que"
@@ -88,12 +86,10 @@
         </div>
       </div>
     </header>
-    <details class="burger-menu">
-      <summary>
-        Menu
-        <i class="fa fa-bars burger-menu__bars"></i>
-      </summary>
-      <ul class="navlinks navLinks_burger">
+    <div class="burger-menu">
+      Menu
+      <i class="fa fa-bars burger-menu__bars"></i>
+      <ul class="navlinks navLinks_burger invisible">
         <li class="navlinks__item">
           <a href="index.html" class="navlinks__link myLink">Home</a>
         </li>
@@ -116,7 +112,7 @@
           <a href="product.html" class="navlinks__link myLink">Hot Deals</a>
         </li>
       </ul>
-    </details>
+    </div>
     <nav class="navMenu">
       <ul class="navlinks">
         <li class="navlinks__item">
