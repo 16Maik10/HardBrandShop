@@ -65,7 +65,22 @@
           </form>
         </div>
         <div class="headerTop__right">
-          <a href="shoping_cart.html" class="headerTop__cart button"></a>
+          <a href="#" class="headerTop__cart button">
+            <div class="headerTop__cartCounter">0</div>
+          </a>
+          <div class="cart-menu invisible">
+            <p class="cart-menu__status">В корзине пусто</p>
+            <a
+              class="cart-menu__btn-check featuredItems__button myLink"
+              href="checkout.html"
+              >CHECKOUT</a
+            >
+            <a
+              class="cart-button cart-menu__btn-cart myLink"
+              href="shoping_cart.html"
+              >go to cart</a
+            >
+          </div>
           <a href="checkout.html" class="headerTop__auth button">
             My Account
             <span class="fa fa-caret-down"></span>
@@ -569,7 +584,9 @@
           </div>
         </div>
       </div>
-      <button class="featuredItems__button button">
+      <button
+        class="featuredItems__button featuredItems__button_big-size button"
+      >
         Browse All Product
         <span class="fa fa-long-arrow-right"></span>
       </button>
@@ -798,6 +815,7 @@
         </div>
       </section>
     </footer>
+    <script src="js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
