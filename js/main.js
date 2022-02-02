@@ -7,47 +7,43 @@ function visibilityOfElement (el){
     el.classList.toggle('invisible');
 }
 
-//Функция закрытия элементов
+//Функция закрытия элементов при клике вне нужного элемента
 function closeWindow (el){
     el.classList.add('invisible');
 }
 
-
-
-//Открытие/закрытие меню корзины
-const cartLogoEl = document.querySelector('.headerTop__cart');
-//cartLogoEl.preventDefault();
-const cartMenuEl = document.querySelector('.cart-menu');
-
-
-//Открытие/закрытие доп.меню у 'Browse'
 const browseEl = document.querySelector('.browse');
 const browseDownEl = document.querySelector('.browse__down');
 browseEl.addEventListener('click', () => visibilityOfElement(browseDownEl));
 
-
-//Открытие/закрытие меню-бургера для адаптива
 const burgerMenuEl = document.querySelector('.burger-menu');
 const menuContentEl = document.querySelector('ul.navLinks_burger');
 burgerMenuEl.addEventListener('click', () => visibilityOfElement(menuContentEl));
 
-//Закрытие всех элементов при клике вне области
 document.addEventListener('click', (event) => {
-        if (!(event.path.includes(browseEl) || (event.path.includes(browseDownEl)))){
-        closeWindow(browseDownEl);
-    } 
+    if (!(event.path.includes(browseEl) || (event.path.includes(browseDownEl)))){
+    closeWindow(browseDownEl);
+} 
 
-    if (!(event.path.includes(burgerMenuEl) || (event.path.includes(menuContentEl)))){
-        closeWindow(menuContentEl);
-    } 
+if (!(event.path.includes(burgerMenuEl) || (event.path.includes(menuContentEl)))){
+    closeWindow(menuContentEl);
+} 
 
 });
+
+
+const cartLogoEl = document.querySelector('.headerTop__cart');
+const cartMenuEl = document.querySelector('.cart-menu');
+const cartStatusEL = document.querySelector('.cart-menu__status')
+const itemsCardBoxEl = document.querySelector('.itemsCardBox');
+const cartMenuGoodsEl = document.querySelector('.cart-menu .cart-menu__goods');
+const cartMenuTotalEl = document.querySelector('.cart-menu .cart-menu__total');
 
 cartLogoEl.addEventListener('click', () => visibilityOfElement(cartMenuEl));
 
 
 
-const cartaddedProductString = el => `<figure class="addedProduct" data-ordinal="${ordinal}">
+const cartAddedProductString = el => `<figure class="addedProduct" data-ordinal="${ordinal}">
 <img
   src=${el.children[0].getAttribute('src')}
   alt="s"
@@ -70,13 +66,6 @@ const cartaddedProductString = el => `<figure class="addedProduct" data-ordinal=
 </button>
 </figure>`
 
-const cartStatusEL = document.querySelector('.cart-menu__status')
-const itemsCardBoxEl = document.querySelector('.itemsCardBox');
-const cartMenuGoodsEl = document.querySelector('.cart-menu .cart-menu__goods');
-const cartMenuTotalEl = document.querySelector('.cart-menu .cart-menu__total');
-let ordinal = 0;
-let arrOfAddedProductsDataset = [];
-
 const totalSum = () => {
     let totalSumofPrices = 0.0;
     for(let i = 0; i < arrOfAddedProductsDataset.length; i++){
@@ -85,6 +74,23 @@ const totalSum = () => {
     return totalSumofPrices.toFixed(2);
 
 }
+
+
+const isCartEmpty = () => {
+    if(cartLogoEl.children[0].textContent !== "0"){
+        cartStatusEL.classList.add('invisible');
+        cartMenuTotalEl.classList.remove('invisible');
+    } else {
+        cartStatusEL.classList.remove('invisible');
+        cartMenuTotalEl.classList.add('invisible');    
+    }
+    cartMenuTotalEl.children[1].textContent = `$${totalSum()}`;
+}
+
+let ordinal = 0;
+let arrOfAddedProductsDataset = [];
+
+
 itemsCardBoxEl.addEventListener('click', (event) => {
     if(!event.target.classList.contains('addBox__button')){
         return;
@@ -102,18 +108,11 @@ itemsCardBoxEl.addEventListener('click', (event) => {
         cartMenuTotalEl.children[1].textContent = `$${totalSum()}`;
         return;
     }
-    cartMenuGoodsEl.insertAdjacentHTML('beforeend',cartaddedProductString(event.target.parentElement.previousElementSibling));
+    cartMenuGoodsEl.insertAdjacentHTML('beforeend',cartAddedProductString(event.target.parentElement.previousElementSibling));
     ordinal++;
     cartLogoEl.children[0].textContent++;
     cartMenuEl.classList.remove('invisible');
-    if(cartLogoEl.children[0].textContent !== "0"){
-        cartStatusEL.classList.add('invisible');
-        cartMenuTotalEl.classList.remove('invisible');
-    } else {
-        cartStatusEL.classList.remove('invisible');
-        cartMenuTotalEl.classList.add('invisible');
-    }
-    cartMenuTotalEl.children[1].textContent = `$${totalSum()}`;
+    isCartEmpty();
 }
     )
 
@@ -131,15 +130,7 @@ cartMenuEl.addEventListener('click', event => {
         cartMenuGoodsEl.children[i].dataset.ordinal--;
     }
     ordinal--;
-    if(cartLogoEl.children[0].textContent !== "0"){
-        cartStatusEL.classList.add('invisible');
-        cartMenuTotalEl.classList.remove('invisible');
-        cartMenuTotalEl.children[1].textContent = `$${totalSum()}`;
-    } else {
-        cartStatusEL.classList.remove('invisible');
-        cartMenuTotalEl.classList.add('invisible');
-        cartMenuTotalEl.children[1].textContent = `$${totalSum()}`;
-    }
+    isCartEmpty();
 })
 
 
