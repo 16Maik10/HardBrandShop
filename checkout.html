@@ -64,11 +64,13 @@
           </form>
         </div>
         <div class="headerTop__right">
-          <a href="#" class="headerTop__cart button"
-            ><div class="headerTop__cartCounter">0</div></a
-          >
           <div class="cart-menu invisible">
             <p class="cart-menu__status">В корзине пусто</p>
+            <div class="cart-menu__goods"></div>
+            <div class="cart-menu__total invisible">
+              <p>total</p>
+              <p class="cart-menu__total_value"></p>
+            </div>
             <a
               class="cart-menu__btn-check featuredItems__button myLink"
               href="checkout.html"
@@ -80,6 +82,9 @@
               >go to cart</a
             >
           </div>
+          <a href="#" class="headerTop__cart button"
+            ><div class="headerTop__cartCounter">0</div></a
+          >
           <a href="checkout.html" class="headerTop__auth button">
             My Account
             <span class="fa fa-caret-down"></span>
