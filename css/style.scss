@@ -125,10 +125,16 @@ dd {
   right: 0;
   z-index: 10;
 
-  &__status {
-    margin-bottom: 20px;
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+    margin: 30px 0 10px;
   }
-
   &__btn-cart {
     padding: 15px 65px;
     margin-top: 10px;
@@ -136,7 +142,53 @@ dd {
 
   &__btn-check {
     padding: 0 70px;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+}
+
+.addedProduct {
+  display: flex;
+  margin-top: 30px;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &__descBlock {
+    margin-left: 15px;
+  }
+
+  &__name {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222;
+    margin-bottom: 10px;
+    max-width: 100px;
+  }
+
+  &__rating {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f16d7f;
+  }
+
+  &__button {
+    display: flex;
+    align-self: center;
+    height: fit-content;
+    margin-left: 30px;
   }
 }
 
