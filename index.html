@@ -31,12 +31,9 @@
             </p>
           </a>
           <form action="#" class="search">
-            <details id="browse">
-              <summary class="browse">
-                <span class="browse__name">Browse</span>
-                <span class="fa fa-caret-right"></span>
-              </summary>
-              <div class="browse__down">
+            <div class="browse">
+              <span class="browse__name">Browse</span>
+              <div class="browse__down invisible">
                 <h3 class="browse__subtitle">Women</h3>
                 <a href="#" class="browse__link myLink">Dresses</a
                 ><a href="#" class="browse__link myLink">Tops</a
@@ -55,7 +52,8 @@
                 ><a href="#" class="browse__link myLink">Blazers</a
                 ><a href="#" class="browse__link myLink">Jackets/vests</a>
               </div>
-            </details>
+              <span class="fa fa-caret-right"></span>
+            </div>
             <input
               type="text"
               class="search__que"
@@ -65,14 +63,61 @@
           </form>
         </div>
         <div class="headerTop__right">
-          <button class="headerTop__cart button"></button>
-          <button class="headerTop__auth button">
+          <div class="cart-menu invisible">
+            <p class="cart-menu__status">В корзине пусто</p>
+            <div class="cart-menu__goods"></div>
+            <div class="cart-menu__total invisible">
+              <p>total</p>
+              <p class="cart-menu__total_value"></p>
+            </div>
+            <a
+              class="cart-menu__btn-check featuredItems__button myLink"
+              href="checkout.html"
+              >CHECKOUT</a
+            >
+            <a
+              class="cart-button cart-menu__btn-cart myLink"
+              href="shoping_cart.html"
+              >go to cart</a
+            >
+          </div>
+          <a href="#" class="headerTop__cart button"
+            ><div class="headerTop__cartCounter">0</div></a
+          >
+          <a href="checkout.html" class="headerTop__auth button">
             My Account
             <span class="fa fa-caret-down"></span>
-          </button>
+          </a>
         </div>
       </div>
     </header>
+    <div class="burger-menu">
+      Menu
+      <i class="fa fa-bars burger-menu__bars"></i>
+      <ul class="navlinks navLinks_burger invisible">
+        <li class="navlinks__item">
+          <a href="index.html" class="navlinks__link myLink">Home</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Men</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Women</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Kids</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Accesories</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Featured</a>
+        </li>
+        <li class="navlinks__item">
+          <a href="product.html" class="navlinks__link myLink">Hot Deals</a>
+        </li>
+      </ul>
+    </div>
     <nav class="navMenu">
       <ul class="navlinks">
         <li class="navlinks__item">
@@ -540,7 +585,9 @@
           </div>
         </div>
       </div>
-      <button class="featuredItems__button button">
+      <button
+        class="featuredItems__button featuredItems__button_big-size button"
+      >
         Browse All Product
         <span class="fa fa-long-arrow-right"></span>
       </button>
@@ -698,7 +745,7 @@
     <footer class="footer">
       <section class="footerNavLinks">
         <div class="footerNavLinks__body myContainer">
-          <div class="footerNavLinks__Col footerCol">
+          <div class="footerNavLinks__Col footerNavLinks__Col_text footerCol">
             <a href="index.html" class="logo myLink">
               <img src="img/header/logo.png" alt="logo" class="logo__icon" />
               <p class="logo__title">
@@ -769,6 +816,7 @@
         </div>
       </section>
     </footer>
+    <script src="js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
